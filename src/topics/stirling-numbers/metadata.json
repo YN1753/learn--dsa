@@ -1,0 +1,9 @@
+{
+  "id": "stirling-numbers",
+  "title": "斯特林数",
+  "description": "组合数学中的核心计数工具，用于集合划分和置换轮换分解",
+  "category": "组合数学",
+  "difficulty": "hard",
+  "tags": ["组合数学", "计数", "集合划分", "置换"],
+  "order": 105
+}

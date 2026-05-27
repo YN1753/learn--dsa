@@ -84,6 +84,7 @@ import './topics/pollard-rho/index'
 import './topics/miller-rabin/index'
 import './topics/fenwick-range/index'
 import './topics/dag-shortest-path/index'
+import './topics/dancing-links/index'
 import './topics/closest-pair/index'
 import './topics/convex-hull/index'
 import './topics/huffman-coding/index'
@@ -102,6 +103,10 @@ import './topics/sprague-grundy/index'
 import './topics/matroid/index'
 import './topics/burnside-lemma/index'
 import './topics/matrix-tree/index'
+import './topics/kd-tree/index'
+import './topics/generating-functions/index'
+import './topics/suffix-automaton/index'
+import './topics/stirling-numbers/index'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
