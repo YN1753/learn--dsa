@@ -40,7 +40,7 @@ function getNodeDepth(nodeId: number): number {
   return depths[nodeId] ?? 0
 }
 
-function generateStepsForDepthLimit(limit: number, allVisited: number[]): AnimationStep[] {
+function generateStepsForDepthLimit(limit: number, _allVisited: number[]): AnimationStep[] {
   const steps: AnimationStep[] = []
   const visited: number[] = []
   const path: number[] = []

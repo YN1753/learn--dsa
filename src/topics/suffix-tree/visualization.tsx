@@ -36,7 +36,7 @@ export default function SuffixTreeVisualization() {
   const [nodes, setNodes] = useState<Record<number, STNode>>({})
   const [edges, setEdges] = useState<Array<{ from: number; to: number; label: string; char: string }>>([])
   const [highlightNode, setHighlightNode] = useState<number | null>(null)
-  const [highlightEdge, setHighlightEdge] = useState<string | null>(null)
+  const [_highlightEdge, setHighlightEdge] = useState<string | null>(null)
   const [description, setDescription] = useState('后缀树可视化 - 输入字符串并点击构建')
   const [isPlaying, setIsPlaying] = useState(false)
   const [speed, setSpeed] = useState(600)
@@ -104,11 +104,12 @@ export default function SuffixTreeVisualization() {
       phase: '初始化',
     })
 
+    let allNodes: Record<number, STNode> = {}
     for (let i = 0; i < fullText.length; i++) {
       nodeId = 0
       // Rebuild tree with suffixes 0..i
       root = createNode(false, 0)
-      const allNodes: Record<number, STNode> = { [root.id]: root }
+      allNodes = { [root.id]: root }
 
       for (let s = 0; s <= i; s++) {
         let current = root

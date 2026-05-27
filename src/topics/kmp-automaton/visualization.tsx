@@ -123,7 +123,7 @@ export default function KmpAutomatonVisualization() {
   const canvasHeight = 420
 
   const getStateX = (state: number): number => svgPadding + state * stateGap + stateRadius
-  const getStateY = (state: number): number => canvasHeight / 2
+  const getStateY = (_state: number): number => canvasHeight / 2
 
   const generateSteps = useCallback((): AnimationStep[] => {
     const result: AnimationStep[] = []
@@ -331,13 +331,6 @@ export default function KmpAutomatonVisualization() {
     }
 
     return { x: (x1 + x2) / 2, y: (y1 + y2) / 2 - 25 }
-  }
-
-  const isTransitionHighlighted = (t: Transition): boolean => {
-    if (!highlightTransition) return false
-    return t.from === highlightTransition.from &&
-           t.to === highlightTransition.to &&
-           t.char === highlightTransition.char
   }
 
   // Group transitions by from->to for display

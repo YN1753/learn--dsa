@@ -9,7 +9,6 @@ export default function cycleDetectionDemo(): string {
 
   const adjList: number[][] = [[1], [2], [0]]
   const colors = new Map<number, string>()
-  const colorNames = ['白色(未访问)', '灰色(访问中)', '黑色(已完成)']
   const WHITE = 'white', GRAY = 'gray', BLACK = 'black'
   let hasCycle = false
 
@@ -102,7 +101,7 @@ export default function cycleDetectionDemo(): string {
     slow = slow!.next
     fast = fast.next.next
     step++
-    output.push(`   步骤${step}: 慢指针=节点${slow!.val}, 快指针=节点${fast.val}`)
+    output.push(`   步骤${step}: 慢指针=节点${slow!.val}, 快指针=节点${fast!.val}`)
     if (slow === fast) {
       output.push(`   -> 快慢指针相遇于节点${slow!.val}，存在环！`)
       floydCycle = true

@@ -73,8 +73,6 @@ export default function LCTVisualization() {
   const handleAccess = () => {
     const targetId = 8 // access(8) -> 路径 8 -> 4 -> 2 -> 1
     const animationSteps: AnimationStep[] = []
-    const pathToRoot = [8, 4, 2, 1]
-
     // Step 1: 开始 access
     animationSteps.push({
       description: `access(${targetId}): 将节点 ${targetId} 到根的路径暴露为偏好路径`,
@@ -82,6 +80,7 @@ export default function LCTVisualization() {
       highlightIds: [targetId],
       highlightType: 'access',
       preferredPath: [],
+      splayEdges: [],
     })
 
     // Step 2: Splay 节点 8
@@ -91,6 +90,7 @@ export default function LCTVisualization() {
       highlightIds: [8],
       highlightType: 'splay',
       preferredPath: [8],
+      splayEdges: [],
     })
 
     // Step 3: 沿虚边向上到 4
@@ -100,6 +100,7 @@ export default function LCTVisualization() {
       highlightIds: [8, 4],
       highlightType: 'access',
       preferredPath: [8, 4],
+      splayEdges: [],
     })
 
     // Step 4: 连接偏好路径
@@ -112,6 +113,7 @@ export default function LCTVisualization() {
       highlightIds: [4, 8],
       highlightType: 'splay',
       preferredPath: [8, 4],
+      splayEdges: [],
     })
 
     // Step 5: 向上到 2
@@ -121,6 +123,7 @@ export default function LCTVisualization() {
       highlightIds: [8, 4, 2],
       highlightType: 'access',
       preferredPath: [8, 4, 2],
+      splayEdges: [],
     })
 
     // Step 6: 建立偏好路径
@@ -133,6 +136,7 @@ export default function LCTVisualization() {
       highlightIds: [2, 4],
       highlightType: 'splay',
       preferredPath: [8, 4, 2],
+      splayEdges: [],
     })
 
     // Step 7: 向上到 1
@@ -142,6 +146,7 @@ export default function LCTVisualization() {
       highlightIds: [8, 4, 2, 1],
       highlightType: 'access',
       preferredPath: [8, 4, 2, 1],
+      splayEdges: [],
     })
 
     // Step 8: 完成
@@ -154,6 +159,7 @@ export default function LCTVisualization() {
       highlightIds: [1, 2, 4, 8],
       highlightType: 'access',
       preferredPath: [8, 4, 2, 1],
+      splayEdges: [],
     })
 
     executeSteps(animationSteps)
@@ -170,6 +176,7 @@ export default function LCTVisualization() {
       highlightIds: [targetId],
       highlightType: 'makeRoot',
       preferredPath: [],
+      splayEdges: [],
     })
 
     // Step 2: access 完成
@@ -179,6 +186,7 @@ export default function LCTVisualization() {
       highlightIds: [1, 2, 5],
       highlightType: 'access',
       preferredPath: [5, 2, 1],
+      splayEdges: [],
     })
 
     // Step 3: 翻转
@@ -188,6 +196,7 @@ export default function LCTVisualization() {
       highlightIds: [1, 2, 5],
       highlightType: 'splay',
       preferredPath: [5, 2, 1],
+      splayEdges: [],
     })
 
     // Step 4: 完成
@@ -201,6 +210,7 @@ export default function LCTVisualization() {
       highlightIds: [5],
       highlightType: 'makeRoot',
       preferredPath: [5],
+      splayEdges: [],
     })
 
     executeSteps(animationSteps)
@@ -216,6 +226,7 @@ export default function LCTVisualization() {
       highlightIds: [u, v],
       highlightType: 'link',
       preferredPath: [],
+      splayEdges: [],
     })
 
     animationSteps.push({
@@ -224,6 +235,7 @@ export default function LCTVisualization() {
       highlightIds: [u],
       highlightType: 'makeRoot',
       preferredPath: [],
+      splayEdges: [],
     })
 
     animationSteps.push({
@@ -235,6 +247,7 @@ export default function LCTVisualization() {
       highlightIds: [u, v],
       highlightType: 'link',
       preferredPath: [],
+      splayEdges: [],
     })
 
     animationSteps.push({
@@ -243,6 +256,7 @@ export default function LCTVisualization() {
       highlightIds: [u, v],
       highlightType: 'link',
       preferredPath: [],
+      splayEdges: [],
     })
 
     executeSteps(animationSteps)
@@ -258,6 +272,7 @@ export default function LCTVisualization() {
       highlightIds: [u, v],
       highlightType: 'cut',
       preferredPath: [],
+      splayEdges: [],
     })
 
     animationSteps.push({
@@ -266,6 +281,7 @@ export default function LCTVisualization() {
       highlightIds: [u],
       highlightType: 'makeRoot',
       preferredPath: [],
+      splayEdges: [],
     })
 
     animationSteps.push({
@@ -274,6 +290,7 @@ export default function LCTVisualization() {
       highlightIds: [u, v],
       highlightType: 'access',
       preferredPath: [v, u],
+      splayEdges: [],
     })
 
     animationSteps.push({
@@ -287,6 +304,7 @@ export default function LCTVisualization() {
       highlightIds: [u, v],
       highlightType: 'cut',
       preferredPath: [],
+      splayEdges: [],
     })
 
     animationSteps.push({
@@ -295,6 +313,7 @@ export default function LCTVisualization() {
       highlightIds: [u, v],
       highlightType: 'cut',
       preferredPath: [],
+      splayEdges: [],
     })
 
     executeSteps(animationSteps)

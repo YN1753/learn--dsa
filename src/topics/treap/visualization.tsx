@@ -77,7 +77,7 @@ export default function TreapVisualization() {
 
       while (currentId !== null) {
         path.push(currentId)
-        const current = nodeMap.get(currentId)!
+        const current: TreapNode = nodeMap.get(currentId)!
         if (key < current.key) {
           if (current.left === null) {
             current.left = newNodeId
@@ -249,7 +249,7 @@ export default function TreapVisualization() {
     })
 
     while (currentId !== null) {
-      const current = nodeMap.get(currentId)!
+      const current: TreapNode = nodeMap.get(currentId)!
 
       if (key === current.key) {
         animationSteps.push({
@@ -322,7 +322,7 @@ export default function TreapVisualization() {
     let targetId: number | null = null
     let currentId: number | null = currentRootId
     while (currentId !== null) {
-      const current = nodeMap.get(currentId)!
+      const current: TreapNode = nodeMap.get(currentId)!
       if (key === current.key) {
         targetId = currentId
         break
@@ -353,7 +353,7 @@ export default function TreapVisualization() {
 
     // For simplicity, do a naive BST delete
     // Find the node and its parent
-    const findAndDelete = (nodeId: number | null, parent: TreapNode | null, isLeft: boolean): number | null => {
+    const findAndDelete = (nodeId: number | null, _parent: TreapNode | null, _isLeft: boolean): number | null => {
       if (nodeId === null) return null
       const node = nodeMap.get(nodeId)!
       if (key < node.key) {

@@ -270,13 +270,13 @@ export default function BitManipulationVisualization() {
               }}
             />
           </label>
-          {['AND', 'OR', 'XOR', 'NOT A', 'A<<1', 'A>>1'].map(op => (
+          {['AND', 'OR', 'XOR', 'NOT A', 'A<<1', 'A>>1'].map(_op => (
             <button
-              key={op}
-              className={`btn ${selectedOp === op ? 'btn-primary' : 'btn-secondary'}`}
-              onClick={() => setSelectedOp(op)}
+              key={_op}
+              className={`btn ${selectedOp === _op ? 'btn-primary' : 'btn-secondary'}`}
+              onClick={() => setSelectedOp(_op)}
             >
-              {op}
+              {_op}
             </button>
           ))}
         </div>
@@ -374,7 +374,7 @@ export default function BitManipulationVisualization() {
         {mode === 'operations' && (
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}>
             {(() => {
-              const { a, b, r, op } = getOpResult()
+              const { a, b, r, op: _op } = getOpResult()
               const isUnary = selectedOp.startsWith('NOT') || selectedOp.includes('<<') || selectedOp.includes('>>')
               return (
                 <>

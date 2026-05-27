@@ -85,8 +85,8 @@ export default function VirtualTreeVisualization() {
   const [isPlaying, setIsPlaying] = useState(false)
   const [speed, setSpeed] = useState(1000)
   const [description, setDescription] = useState('选择关键节点，点击「构建虚树」开始')
-  const [showVT, setShowVT] = useState(false)
-  const [vtNodes, setVtNodes] = useState<VNode[]>([])
+  const [_showVT, setShowVT] = useState(false)
+  const [_vtNodes, setVtNodes] = useState<VNode[]>([])
   const [vtEdges, setVtEdges] = useState<VEdge[]>([])
   const [highlightNodes, setHighlightNodes] = useState<number[]>([])
   const [highlightType, setHighlightType] = useState<'key' | 'lca' | 'processing' | 'stack' | 'done' | 'none'>('none')
@@ -361,7 +361,7 @@ export default function VirtualTreeVisualization() {
     <div className="visualization-container">
       <div className="viz-controls">
         <span style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', marginRight: '0.5rem' }}>关键节点:</span>
-        {TREE_NODES.filter(n => n.children && n.children.length === 0).map(n => (
+        {TREE_NODES.filter(n => !TREE_EDGES.some(e => e.from === n.id)).map(n => (
           <button
             key={n.id}
             className={`btn ${keyNodes.includes(n.id) ? 'btn-primary' : 'btn-secondary'}`}

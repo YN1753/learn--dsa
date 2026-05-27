@@ -212,7 +212,6 @@ export default function PalindromicTreeVisualization() {
     }
 
     const canvasWidth = 720
-    const canvasHeight = 420
     const layerGap = 65
     const topY = 40
 

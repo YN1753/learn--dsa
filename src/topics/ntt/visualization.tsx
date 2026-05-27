@@ -30,12 +30,12 @@ interface ButterflyStep {
 }
 
 export default function NTTVisualization() {
-  const [inputA, setInputA] = useState<number[]>([1, 2, 3, 0])
-  const [inputB, setInputB] = useState<number[]>([4, 5, 0, 0])
+  const [inputA] = useState<number[]>([1, 2, 3, 0])
+  const [inputB] = useState<number[]>([4, 5, 0, 0])
   const [result, setResult] = useState<number[]>([])
   const [steps, setSteps] = useState<ButterflyStep[]>([])
   const [currentStep, setCurrentStep] = useState(0)
-  const [currentArray, setCurrentArray] = useState<number[]>([])
+  const [, setCurrentArray] = useState<number[]>([])
   const [isPlaying, setIsPlaying] = useState(false)
   const [speed, setSpeed] = useState(500)
   const [description, setDescription] = useState<string>('点击「开始NTT」查看蝶形运算过程')

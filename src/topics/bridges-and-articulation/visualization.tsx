@@ -70,8 +70,6 @@ function generateDfsSteps(nodes: VisNode[], edges: VisEdge[]): DfsStep[] {
   let time = 0
 
   // Track return values for low updates
-  const pendingLowReturns: { parent: number; child: number; childLow: number }[] = []
-
   function addStep(description: string, currentNode: number | null, phase: DfsStep['phase']) {
     steps.push({
       description,

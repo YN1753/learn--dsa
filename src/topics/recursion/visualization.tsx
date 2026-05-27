@@ -23,13 +23,6 @@ interface FibNode {
   parent?: string
 }
 
-interface HanoiStep {
-  disk: number
-  from: string
-  to: string
-  description: string
-}
-
 type DemoMode = 'factorial' | 'fibonacci' | 'tower-of-hanoi'
 
 let frameId = 0
@@ -69,7 +62,6 @@ export default function RecursionVisualization() {
   // Tower of Hanoi state
   const [hanoiDisks, setHanoiDisks] = useState(3)
   const [hanoiPegs, setHanoiPegs] = useState<Map<string, number[]>>(new Map())
-  const [hanoiSteps, setHanoiSteps] = useState<HanoiStep[]>([])
   const [hanoiStateSteps, setHanoiStateSteps] = useState<Array<{
     pegs: Map<string, number[]>
     desc: string
@@ -605,7 +597,6 @@ export default function RecursionVisualization() {
     const pegWidth = 120
     const diskHeight = 22
     const pegHeight = (maxDisk + 1) * diskHeight + 20
-    const totalWidth = pegWidth * 3 + 60
 
     return (
       <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', alignItems: 'flex-end', minHeight: pegHeight + 40 }}>

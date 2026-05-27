@@ -147,8 +147,6 @@ export default function matrixExponentiationDemo(): string {
     [1, 0, 0],
     [0, 1, 0],
   ]
-  const initVec: Matrix = [[3], [1], [1]]
-
   function tribonacci(n: number): number {
     if (n === 0) return 1
     if (n === 1) return 1

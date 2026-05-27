@@ -49,7 +49,7 @@ export default function linkCutTreeDemo(): string {
     const g = parentNode.parent
 
     if (!isRoot(p)) {
-      const gNode = nodes.get(g)!
+      const gNode = nodes.get(g!)!
       if (gNode.left === p) gNode.left = x
       else if (gNode.right === p) gNode.right = x
     }
@@ -126,17 +126,6 @@ export default function linkCutTreeDemo(): string {
     makeRoot(u)
     if (findRoot(v) !== u) {
       nodes.get(u)!.parent = v
-    }
-  }
-
-  function cut(u: number, v: number) {
-    makeRoot(u)
-    access(v)
-    // after access(v) and makeRoot(u), u should be left child of v
-    const vnode = nodes.get(v)!
-    if (vnode.left === u) {
-      vnode.left = null
-      nodes.get(u)!.parent = null
     }
   }
 

@@ -32,7 +32,7 @@ export default function GeneralizedSuffixAutomatonVisualization() {
   const [inputStrings, setInputStrings] = useState<string[]>(['abc', 'bc'])
   const [newStr, setNewStr] = useState('')
   const [states, setStates] = useState<GSAMState[]>([])
-  const [last, setLast] = useState(0)
+  const [_last, setLast] = useState(0)
   const [highlightState, setHighlightState] = useState<number | null>(null)
   const [highlightTransition, setHighlightTransition] = useState<string | null>(null)
   const [description, setDescription] = useState('广义后缀自动机可视化 - 添加字符串并点击构建')

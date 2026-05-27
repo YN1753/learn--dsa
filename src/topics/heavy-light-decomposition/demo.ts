@@ -115,7 +115,6 @@ export default function heavyLightDecompositionDemo(): string {
   const u = 8, v = 7
   output.push(`  查询节点 ${u} 到节点 ${v} 的路径：`)
 
-  let pathStr = ''
   let cu = u, cv = v
   const segments: string[] = []
 

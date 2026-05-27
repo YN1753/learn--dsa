@@ -88,10 +88,6 @@ function treeUpdate(prevNodes: VisNode[], prevRootId: number, lo: number, hi: nu
   }
 }
 
-function collectAllNodes(versions: Version[], allNodes: VisNode[]): VisNode[] {
-  return allNodes
-}
-
 export default function PersistentSegmentTreeVisualization() {
   const [versions, setVersions] = useState<Version[]>([])
   const [allNodes, setAllNodes] = useState<VisNode[]>([])
@@ -331,9 +327,6 @@ export default function PersistentSegmentTreeVisualization() {
 
     return elements
   }
-
-  const activeVersionData = versions.find(v => v.id === activeVersion)
-  const activeNodes = allNodes.filter(n => n.version <= activeVersion)
 
   return (
     <div className="visualization-container">

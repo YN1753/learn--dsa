@@ -28,7 +28,7 @@ function sievePrimes(limit: number): number[] {
 
 function min25Sieve(
   n: number,
-  fAtPrime: (p: number) => number,
+  _fAtPrime: (p: number) => number,
   fAtPrimePower: (p: number, k: number) => number
 ): Min25Result {
   const sqrtN = Math.floor(Math.sqrt(n))
@@ -123,7 +123,7 @@ export default function min25SieveDemo(): string {
   output.push('   f(p^k) = 0 对所有 k >= 2\n')
 
   const n1 = 100
-  const result1 = min25Sieve(n1, (p) => 1, (p, k) => k >= 2 ? 0 : 1)
+  const result1 = min25Sieve(n1, (_p) => 1, (_p, k) => k >= 2 ? 0 : 1)
   output.push(`   n = ${n1}`)
   output.push(`   筛出的质数: ${result1.primes.join(', ')}`)
   output.push(`   π(${n1}) = ${result1.prefixSum}`)
@@ -152,7 +152,7 @@ export default function min25SieveDemo(): string {
   output.push('   f(p^k) = 0 对所有 k >= 2\n')
 
   const n3 = 50
-  const result3 = min25Sieve(n3, (p) => -1, (p, k) => k >= 2 ? 0 : -1)
+  const result3 = min25Sieve(n3, (_p) => -1, (_p, k) => k >= 2 ? 0 : -1)
   output.push(`   n = ${n3}`)
   output.push(`   Σμ(i) for i=1 to ${n3} = ${result3.prefixSum}`)
   output.push('')
@@ -160,7 +160,7 @@ export default function min25SieveDemo(): string {
   // 演示4：第二阶段递归过程
   output.push('4. 第二阶段递归过程示例 (n = 20)')
   const n4 = 20
-  const result4 = min25Sieve(n4, (p) => 1, (p, k) => k >= 2 ? 0 : 1)
+  const result4 = min25Sieve(n4, (_p) => 1, (_p, k) => k >= 2 ? 0 : 1)
   output.push(`   n = ${n4}`)
   output.push(`   递归步骤:`)
   for (const step of result4.phase2Steps.slice(0, 10)) {

@@ -74,24 +74,6 @@ function getSubtreeSizes(
   return sizes
 }
 
-function findCentroid(
-  adj: Map<number, number[]>,
-  node: number,
-  parent: number,
-  totalSize: number,
-  removed: Set<number>
-): number {
-  for (const child of adj.get(node) || []) {
-    if (child !== parent && !removed.has(child)) {
-      const childSizes = getSubtreeSizes(adj, child, node, removed)
-      if (childSizes.get(child)! > Math.floor(totalSize / 2)) {
-        return findCentroid(adj, child, node, totalSize, removed)
-      }
-    }
-  }
-  return node
-}
-
 function getComponentNodes(
   adj: Map<number, number[]>,
   start: number,
@@ -246,7 +228,6 @@ function buildAnimationSteps(): AnimationStep[] {
   removed.add(8)
 
   // Round 2: component [1, 3, 6, 7]
-  const comp3 = [1, 3, 6, 7]
   steps.push({
     description: `第 2 层分治：处理连通分量 [1, 3, 6, 7]，大小为 4。从节点 1 开始查找重心。`,
     nodes: makeBaseNodes({ 1: { status: 'checking' } }),

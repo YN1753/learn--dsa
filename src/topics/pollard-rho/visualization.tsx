@@ -155,21 +155,6 @@ export default function PollardRhoVisualization() {
 
   const currentStepData = currentStep > 0 && currentStep <= steps.length ? steps[currentStep - 1] : null
 
-  // Compute rho shape positions for sequence visualization
-  const computeSequencePositions = useCallback(() => {
-    if (!currentStepData || currentStepData.history.length === 0) return []
-    const positions: { x: number; y: number; value: number; index: number }[] = []
-    const seen = new Map<number, number>()
-    let val = 2
-    for (let i = 0; i < currentStepData.history.length + 5; i++) {
-      if (seen.has(val)) break
-      seen.set(val, i)
-      positions.push({ x: 0, y: 0, value: val, index: i })
-      val = (val * val + c) % n
-    }
-    return positions
-  }, [currentStepData, n, c])
-
   const canvasWidth = 700
   const canvasHeight = 320
 

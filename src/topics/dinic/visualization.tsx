@@ -168,7 +168,6 @@ function generateDinicSteps(initialState: GraphState): AnimationStep[] {
     let augmentCount = 0
     while (true) {
       // Reset ptr for each augmentation attempt
-      const savedPtr = [...ptr]
       const savedEdges = state.edges.map(e => ({ ...e }))
 
       const pushed = dfs(source, Infinity)
@@ -415,7 +414,7 @@ export default function DinicVisualization() {
           </defs>
 
           {/* Edges */}
-          {realEdges.map((edge, i) => {
+          {realEdges.map((edge, _i) => {
             const fromNode = graphState.nodes[edge.from]
             const toNode = graphState.nodes[edge.to]
             const edgeIdx = graphState.edges.indexOf(edge)

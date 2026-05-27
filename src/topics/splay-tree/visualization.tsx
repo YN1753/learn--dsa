@@ -142,7 +142,7 @@ class SplayDemo {
       return this.steps
     }
 
-    this.root = this.splay(this.root, value)
+    this.root = this.splay(this.root, value)!
 
     if (this.root.value === value) {
       this.steps.push({
@@ -243,7 +243,7 @@ class SplayDemo {
       return this.steps
     }
 
-    this.root = this.splay(this.root, value)
+    this.root = this.splay(this.root, value)!
 
     if (this.root.value !== value) {
       this.steps.push({
@@ -259,11 +259,11 @@ class SplayDemo {
       description: `找到 ${value}，执行删除`,
       phase: 'delete',
       tree: cloneTree(this.root),
-      highlights: [{ nodeId: this.root.id, color: '#ef4444' }],
+      highlights: [{ nodeId: this.root!.id, color: '#ef4444' }],
     })
 
-    if (!this.root.left) {
-      this.root = this.root.right
+    if (!this.root!.left) {
+      this.root = this.root!.right
       this.steps.push({
         description: `无左子树，右子树成为新根`,
         phase: 'delete',
@@ -271,8 +271,8 @@ class SplayDemo {
         highlights: this.root ? [{ nodeId: this.root.id, color: '#22c55e' }] : [],
       })
     } else {
-      const leftTree = this.root.left
-      const rightTree = this.root.right
+      const leftTree = this.root!.left
+      const rightTree = this.root!.right
 
       // Find max in left subtree
       let maxNode = leftTree

@@ -125,7 +125,7 @@ function generateQuerySteps(arr: number[], sum: number[], l: number, r: number):
 export default function PrefixSumVisualization() {
   const [inputArray, setInputArray] = useState<number[]>(SAMPLE_ARRAYS[0])
   const [buildSteps, setBuildSteps] = useState<PrefixSumStep[]>([])
-  const [querySteps, setQuerySteps] = useState<PrefixSumStep[]>([])
+  const [, setQuerySteps] = useState<PrefixSumStep[]>([])
   const [allSteps, setAllSteps] = useState<PrefixSumStep[]>([])
   const [currentStep, setCurrentStep] = useState(0)
   const [isPlaying, setIsPlaying] = useState(false)

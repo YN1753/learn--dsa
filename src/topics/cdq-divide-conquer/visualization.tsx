@@ -8,13 +8,6 @@ interface Point3D {
   color: string
 }
 
-interface DivState {
-  left: number
-  right: number
-  depth: number
-  phase: 'divide' | 'conquer' | 'merge'
-}
-
 interface StepInfo {
   description: string
   points: Point3D[]
@@ -52,8 +45,6 @@ export default function CDQVisualization() {
   const [highlightRight, setHighlightRight] = useState<number[]>([])
   const [highlightContrib, setHighlightContrib] = useState<number[]>([])
   const [stateInfo, setStateInfo] = useState<string>('就绪')
-  const timerRef = useRef<number | null>(null)
-
   const executeSteps = useCallback((animationSteps: StepInfo[]) => {
     setSteps(animationSteps)
     setCurrentStep(0)

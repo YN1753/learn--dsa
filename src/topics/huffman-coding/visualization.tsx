@@ -45,7 +45,7 @@ export default function HuffmanCodingVisualization() {
   const [steps, setSteps] = useState<AnimationStep[]>([])
   const [currentStep, setCurrentStep] = useState(0)
   const [highlightIds, setHighlightIds] = useState<number[]>([])
-  const [mergeRound, setMergeRound] = useState(0)
+  const [_mergeRound, setMergeRound] = useState(0)
   const [codeTable, setCodeTable] = useState<Map<string, string>>(new Map())
   const timerRef = useRef<number | null>(null)
 
@@ -215,8 +215,6 @@ export default function HuffmanCodingVisualization() {
     const edges: { from: HuffmanNode; to: HuffmanNode; label: string }[] = []
     const svgWidth = 700
     const levelHeight = 80
-    const nodeRadius = 28
-
     function getWidth(node: HuffmanNode): number {
       if (!node.left && !node.right) return 1
       const leftW = node.left ? getWidth(node.left) : 0

@@ -21,7 +21,7 @@ function printTree(node: SuffixTreeNode, text: string, prefix: string, isLast: b
   const childPrefix = prefix + (isLast ? '    ' : '│   ')
 
   const entries = Array.from(node.children.entries())
-  entries.forEach(([ch, edge], index) => {
+  entries.forEach(([_ch, edge], index) => {
     const isChildLast = index === entries.length - 1
     const label = text.substring(edge.start, edge.end + 1)
     const leafMark = edge.node.isLeaf ? ' *' : ''

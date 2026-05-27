@@ -26,7 +26,7 @@ function generateDuvalSteps(s: string): VizState[] {
   const makeHighlight = (
     iVal: number, jVal: number, kVal: number,
     cmp: { left: number; right: number } | null,
-    phase: VizState['phase'],
+    _phase: VizState['phase'],
     currentFactorStart: number
   ) => {
     const cells: VizState['highlightCells'] = []

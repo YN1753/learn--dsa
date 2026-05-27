@@ -27,7 +27,7 @@ function addEdge(graph: DinicGraph, from: number, to: number, capacity: number):
   graph.adj[to].push(idx + 1)
 }
 
-function bfsLevel(graph: DinicGraph, source: number, sink: number): number[] {
+function bfsLevel(graph: DinicGraph, source: number, _sink: number): number[] {
   const level = new Array(graph.nodes).fill(-1)
   level[source] = 0
   const queue = [source]

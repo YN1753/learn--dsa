@@ -26,17 +26,6 @@ function generateNodeId(): string {
 
 const NIL: RBNodeData = { value: -1, left: null, right: null, color: 'B', id: 'nil' }
 
-function cloneTree(node: RBNodeData | null): RBNodeData | null {
-  if (!node || node === NIL) return null
-  return {
-    value: node.value,
-    left: cloneTree(node.left),
-    right: cloneTree(node.right),
-    color: node.color,
-    id: node.id,
-  }
-}
-
 function findNode(node: RBNodeData | null, value: number): string | null {
   if (!node || node === NIL) return null
   if (value === node.value) return node.id
@@ -89,7 +78,7 @@ class RBDemo {
   private rotateLeft(x: InternalNode): void {
     const y = x.right!
     x.right = y.left
-    if (y.left !== INTERNAL_NIL) y.left.parent = x
+    if (y.left !== INTERNAL_NIL) y.left!.parent = x
     y.parent = x.parent
     if (x.parent === null) {
       this.root = y
@@ -105,7 +94,7 @@ class RBDemo {
   private rotateRight(x: InternalNode): void {
     const y = x.left!
     x.left = y.right
-    if (y.right !== INTERNAL_NIL) y.right.parent = x
+    if (y.right !== INTERNAL_NIL) y.right!.parent = x
     y.parent = x.parent
     if (x.parent === null) {
       this.root = y
@@ -200,22 +189,22 @@ class RBDemo {
 
       if (parent === grandparent.left) {
         const uncle = grandparent.right
-        if (uncle.color === 'R') {
+        if (uncle!.color === 'R') {
           // Case 1: color flip
           steps.push({
-            description: `情况1: 叔叔节点 ${uncle.value} 是红色，颜色翻转 → 父 ${parent.value} 和叔 ${uncle.value} 染黑，祖父 ${grandparent.value} 染红`,
+            description: `情况1: 叔叔节点 ${uncle!.value} 是红色，颜色翻转 → 父 ${parent.value} 和叔 ${uncle!.value} 染黑，祖父 ${grandparent.value} 染红`,
             phase: 'fix',
             tree: toDisplayTree(this.root),
             highlights: [
               { nodeId: parent.id, color: '#3b82f6' },
-              { nodeId: uncle.id, color: '#3b82f6' },
+              { nodeId: uncle!.id, color: '#3b82f6' },
               { nodeId: grandparent.id, color: '#f59e0b' },
             ],
             violations,
             insertedKey: node.value,
           })
           parent.color = 'B'
-          uncle.color = 'B'
+          uncle!.color = 'B'
           grandparent.color = 'R'
           current = grandparent
 
@@ -260,21 +249,21 @@ class RBDemo {
       } else {
         // Symmetric
         const uncle = grandparent.left
-        if (uncle.color === 'R') {
+        if (uncle!.color === 'R') {
           steps.push({
-            description: `情况1(对称): 叔叔节点 ${uncle.value} 是红色，颜色翻转 → 父 ${parent.value} 和叔 ${uncle.value} 染黑，祖父 ${grandparent.value} 染红`,
+            description: `情况1(对称): 叔叔节点 ${uncle!.value} 是红色，颜色翻转 → 父 ${parent.value} 和叔 ${uncle!.value} 染黑，祖父 ${grandparent.value} 染红`,
             phase: 'fix',
             tree: toDisplayTree(this.root),
             highlights: [
               { nodeId: parent.id, color: '#3b82f6' },
-              { nodeId: uncle.id, color: '#3b82f6' },
+              { nodeId: uncle!.id, color: '#3b82f6' },
               { nodeId: grandparent.id, color: '#f59e0b' },
             ],
             violations,
             insertedKey: node.value,
           })
           parent.color = 'B'
-          uncle.color = 'B'
+          uncle!.color = 'B'
           grandparent.color = 'R'
           current = grandparent
 

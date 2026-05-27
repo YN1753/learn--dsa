@@ -26,7 +26,7 @@ class RedBlackTree {
     const y = x.right!
     x.right = y.left
     if (y.left !== NIL_NODE) {
-      y.left.parent = x
+      y.left!.parent = x
     }
     y.parent = x.parent
     if (x.parent === null) {
@@ -45,7 +45,7 @@ class RedBlackTree {
     const y = x.left!
     x.left = y.right
     if (y.right !== NIL_NODE) {
-      y.right.parent = x
+      y.right!.parent = x
     }
     y.parent = x.parent
     if (x.parent === null) {
@@ -124,12 +124,12 @@ class RedBlackTree {
       if (parent === grandparent.left) {
         const uncle = grandparent.right
 
-        if (uncle.color === 'R') {
+        if (uncle!.color === 'R') {
           // 情况 1：叔叔是红色 -> 颜色翻转
-          steps.push(`  情况1: 叔叔节点 ${uncle.value} 是红色，执行颜色翻转`)
-          steps.push(`    父节点 ${parent.value} 染黑，叔叔 ${uncle.value} 染黑，祖父 ${grandparent.value} 染红`)
+          steps.push(`  情况1: 叔叔节点 ${uncle!.value} 是红色，执行颜色翻转`)
+          steps.push(`    父节点 ${parent.value} 染黑，叔叔 ${uncle!.value} 染黑，祖父 ${grandparent.value} 染红`)
           parent.color = 'B'
-          uncle.color = 'B'
+          uncle!.color = 'B'
           grandparent.color = 'R'
           current = grandparent
         } else {
@@ -150,11 +150,11 @@ class RedBlackTree {
         // 对称情况
         const uncle = grandparent.left
 
-        if (uncle.color === 'R') {
-          steps.push(`  情况1(对称): 叔叔节点 ${uncle.value} 是红色，执行颜色翻转`)
-          steps.push(`    父节点 ${parent.value} 染黑，叔叔 ${uncle.value} 染黑，祖父 ${grandparent.value} 染红`)
+        if (uncle!.color === 'R') {
+          steps.push(`  情况1(对称): 叔叔节点 ${uncle!.value} 是红色，执行颜色翻转`)
+          steps.push(`    父节点 ${parent.value} 染黑，叔叔 ${uncle!.value} 染黑，祖父 ${grandparent.value} 染红`)
           parent.color = 'B'
-          uncle.color = 'B'
+          uncle!.color = 'B'
           grandparent.color = 'R'
           current = grandparent
         } else {
@@ -201,10 +201,10 @@ class RedBlackTree {
     const hasChildren = (node.left !== NIL_NODE) || (node.right !== NIL_NODE)
     if (hasChildren) {
       if (node.right !== NIL_NODE) {
-        this.printNode(node.right, newPrefix, node.left === NIL_NODE, lines)
+        this.printNode(node.right!, newPrefix, node.left === NIL_NODE, lines)
       }
       if (node.left !== NIL_NODE) {
-        this.printNode(node.left, newPrefix, true, lines)
+        this.printNode(node.left!, newPrefix, true, lines)
       }
     }
   }
@@ -218,9 +218,9 @@ class RedBlackTree {
 
   private inorderHelper(node: RBNode, result: number[]): void {
     if (node === NIL_NODE) return
-    this.inorderHelper(node.left, result)
+    this.inorderHelper(node.left!, result)
     result.push(node.value)
-    this.inorderHelper(node.right, result)
+    this.inorderHelper(node.right!, result)
   }
 
   // 验证红黑树性质
@@ -245,17 +245,17 @@ class RedBlackTree {
 
     // 性质 4: 红色节点的子节点必须是黑色
     if (node.color === 'R') {
-      if (node.left.color === 'R') {
-        errors.push(`节点 ${node.value} 是红色，其左子节点 ${node.left.value} 也是红色`)
+      if (node.left!.color === 'R') {
+        errors.push(`节点 ${node.value} 是红色，其左子节点 ${node.left!.value} 也是红色`)
       }
-      if (node.right.color === 'R') {
-        errors.push(`节点 ${node.value} 是红色，其右子节点 ${node.right.value} 也是红色`)
+      if (node.right!.color === 'R') {
+        errors.push(`节点 ${node.value} 是红色，其右子节点 ${node.right!.value} 也是红色`)
       }
     }
 
     // 递归计算黑高
-    const leftBH = this.validateNode(node.left, errors)
-    const rightBH = this.validateNode(node.right, errors)
+    const leftBH = this.validateNode(node.left!, errors)
+    const rightBH = this.validateNode(node.right!, errors)
 
     // 性质 5: 左右子树黑高必须相同
     if (leftBH !== rightBH) {

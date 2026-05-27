@@ -1,13 +1,8 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 
-interface CellData {
-  value: number
-  computed: boolean
-}
-
 interface AnimationStep {
   description: string
-  phase: 'init' | 'build' | 'query'
+  phase: 'init' | 'build' | 'query' | 'ready'
   st: (number | null)[][]
   highlightCells: { i: number; k: number; color: string }[]
   queryRange?: { l: number; r: number }
@@ -29,7 +24,7 @@ export default function SparseTableVisualization() {
   const [highlightCells, setHighlightCells] = useState<{ i: number; k: number; color: string }[]>([])
   const [queryRange, setQueryRange] = useState<{ l: number; r: number } | null>(null)
   const [queryResult, setQueryResult] = useState<number | null>(null)
-  const [currentK, setCurrentK] = useState<number | undefined>(undefined)
+  const [, setCurrentK] = useState<number | undefined>(undefined)
   const timerRef = useRef<number | null>(null)
 
   const n = arr.length
@@ -125,7 +120,7 @@ export default function SparseTableVisualization() {
       st: actualSt.map(row => [...row]),
       highlightCells: [],
       queryRange: { l, r },
-      queryResult: null,
+      queryResult: undefined,
     })
 
     // Step 2: Show k calculation
@@ -138,7 +133,7 @@ export default function SparseTableVisualization() {
         { i: r - halfLen + 1, k, color: '#8b5cf6' },
       ],
       queryRange: { l, r },
-      queryResult: null,
+      queryResult: undefined,
     })
 
     // Step 3: Show result

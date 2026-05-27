@@ -1,11 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 
-interface BITNode {
-  index: number
-  value: number
-  delta: number
-}
-
 interface AnimationStep {
   description: string
   bit1Values: number[]

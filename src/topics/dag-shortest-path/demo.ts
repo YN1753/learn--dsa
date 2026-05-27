@@ -29,29 +29,6 @@ function topologicalSort(graph: Map<number, Edge[]>, n: number): number[] {
   return order
 }
 
-function dagShortestPath(
-  graph: Map<number, Edge[]>,
-  n: number,
-  source: number
-): { dist: number[]; prev: (number | null)[] } {
-  const topoOrder = topologicalSort(graph, n)
-  const dist = new Array(n).fill(Infinity)
-  const prev: (number | null)[] = new Array(n).fill(null)
-  dist[source] = 0
-
-  for (const u of topoOrder) {
-    if (dist[u] === Infinity) continue
-    for (const e of graph.get(u) || []) {
-      if (dist[u] + e.weight < dist[e.to]) {
-        dist[e.to] = dist[u] + e.weight
-        prev[e.to] = u
-      }
-    }
-  }
-
-  return { dist, prev }
-}
-
 function getPath(prev: (number | null)[], target: number): number[] {
   const path: number[] = []
   let current: number | null = target

@@ -111,7 +111,7 @@ export default function HeavyLightDecompositionVisualization() {
   const [chainColors, setChainColors] = useState<Map<number, number[]>>(new Map())
   const [dfsOrder, setDfsOrder] = useState<number[]>([])
   const [querySegments, setQuerySegments] = useState<{ from: number; to: number; chainHead: number }[]>([])
-  const [nodeLabels, setNodeLabels] = useState<Map<number, string>>(new Map())
+  const [_nodeLabels, setNodeLabels] = useState<Map<number, string>>(new Map())
   const timerRef = useRef<number | null>(null)
 
   const nodePositions = getNodePositions()
@@ -119,7 +119,7 @@ export default function HeavyLightDecompositionVisualization() {
 
   const generateSteps = useCallback((): AnimationStep[] => {
     const result: AnimationStep[] = []
-    const { size, heavy, head } = computeHLD()
+    const { size, heavy, head: _head } = computeHLD()
 
     result.push({
       description: '初始状态：这是一棵有 9 个节点的树',
@@ -452,8 +452,6 @@ export default function HeavyLightDecompositionVisualization() {
             const color = getNodeColor(node.id)
             const border = getNodeBorder(node.id)
             const isHighlighted = highlightedNodes.includes(node.id)
-            const isHeavyNode = heavy[node.id] !== -1
-
             return (
               <g key={node.id}>
                 <circle

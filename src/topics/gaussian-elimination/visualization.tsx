@@ -299,7 +299,6 @@ export default function GaussianEliminationVisualization() {
     return '1px solid var(--border)'
   }
 
-  const n = matrix.length
   const m = matrix[0]?.length ?? 0
 
   return (

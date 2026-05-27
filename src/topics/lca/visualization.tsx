@@ -8,11 +8,6 @@ interface TreeNode {
   y: number
 }
 
-interface BinaryLiftEntry {
-  node: number
-  ancestors: number[] // ancestors[k] = 2^k-th ancestor
-}
-
 interface AnimationStep {
   description: string
   highlightNodes: number[]
@@ -71,16 +66,6 @@ const LIFT_TABLE = buildBinaryLiftTable()
 
 function getDepth(node: number): number {
   return DEPTH[node] ?? 0
-}
-
-function getPathToRoot(node: number): number[] {
-  const path: number[] = []
-  let cur: number | null = node
-  while (cur !== null) {
-    path.push(cur)
-    cur = PARENT[cur] ?? null
-  }
-  return path
 }
 
 export default function LCAVisualization() {

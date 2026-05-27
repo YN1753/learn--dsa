@@ -62,10 +62,6 @@ function negate(lit: string): string {
   return lit.startsWith('¬') ? lit.slice(1) : `¬${lit}`
 }
 
-function litToNodeId(lit: string): string {
-  return lit
-}
-
 function getVariables(clauses: Clause[]): string[] {
   const vars = new Set<string>()
   for (const c of clauses) {
@@ -109,8 +105,6 @@ function generateSteps(clauses: Clause[]): AnimationStep[] {
   }
 
   const initialNodes = allLits.map((lit, i) => makeNode(lit, i, allLits.length))
-  const initialEdges: GraphEdge[] = []
-
   // Step 0: Initial state
   steps.push({
     description: `初始状态：${variables.length} 个变量，${clauses.length} 个子句。蕴含图有 ${allLits.length} 个节点。`,
@@ -162,8 +156,6 @@ function generateSteps(clauses: Clause[]): AnimationStep[] {
   }
 
   // Simple SCC via DFS-based approach for visualization
-  const nodePositions = new Map(initialNodes.map(n => [n.id, { x: n.x, y: n.y }]))
-
   // Perform Tarjan-like DFS
   const dfn = new Map<string, number>()
   const low = new Map<string, number>()
