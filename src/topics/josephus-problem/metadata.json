@@ -1,0 +1,9 @@
+{
+  "id": "josephus-problem",
+  "title": "约瑟夫问题 (Josephus Problem)",
+  "description": "n个人围成一圈报数，每第k个人出列，求最后剩下的人的编号",
+  "category": "数学",
+  "difficulty": "intermediate",
+  "tags": ["数学", "递推", "模拟", "约瑟夫环"],
+  "order": 137
+}

@@ -1,0 +1,9 @@
+{
+  "id": "digit-dp",
+  "title": "数位DP (Digit DP)",
+  "description": "按位处理数字的动态规划，用于统计满足某种数字性质的数的个数",
+  "category": "动态规划",
+  "difficulty": "advanced",
+  "tags": ["动态规划", "数位", "计数", "递归"],
+  "order": 139
+}

@@ -1,0 +1,9 @@
+{
+  "id": "catalan-numbers",
+  "title": "卡特兰数 (Catalan Numbers)",
+  "description": "经典的组合计数数列，广泛应用于括号匹配、二叉树计数、路径计数等问题",
+  "category": "数学",
+  "difficulty": "intermediate",
+  "tags": ["数学", "组合", "卡特兰数", "计数", "递推"],
+  "order": 138
+}

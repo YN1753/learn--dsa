@@ -1,0 +1,9 @@
+{
+  "id": "bitmask-dp",
+  "title": "状压DP (Bitmask DP)",
+  "description": "用二进制状态压缩表示集合状态的动态规划，常用于小规模集合问题",
+  "category": "动态规划",
+  "difficulty": "advanced",
+  "tags": ["动态规划", "状态压缩", "位运算", "集合"],
+  "order": 140
+}

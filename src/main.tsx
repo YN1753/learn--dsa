@@ -137,6 +137,10 @@ import './topics/modular-inverse/index'
 import './topics/nim/index'
 import './topics/line-sweep/index'
 import './topics/fibonacci/index'
+import './topics/josephus-problem/index'
+import './topics/catalan-numbers/index'
+import './topics/digit-dp/index'
+import './topics/bitmask-dp/index'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
