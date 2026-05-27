@@ -1,0 +1,9 @@
+{
+  "id": "aho-corasick",
+  "title": "AC自动机",
+  "description": "基于 Trie 和失败指针的多模式串匹配算法，一次扫描匹配所有模式",
+  "category": "搜索算法",
+  "difficulty": "advanced",
+  "tags": ["AC自动机", "多模式匹配", "Trie", "失败指针"],
+  "order": 47
+}

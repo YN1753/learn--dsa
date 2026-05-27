@@ -1,0 +1,1 @@
+{"id":"binary-search-answer","title":"二分答案","description":"将最优化问题转化为判定问题，通过二分搜索答案空间来求解","category":"搜索算法","difficulty":"intermediate","tags":["二分答案","判定问题","最优化","贪心"],"order":49}

@@ -1,0 +1,9 @@
+{
+  "id": "min-cost-max-flow",
+  "title": "最小费用最大流",
+  "description": "在网络中求解最大流的同时最小化总费用的算法",
+  "category": "树形结构",
+  "difficulty": "advanced",
+  "tags": ["网络流", "费用流", "SPFA", "MCMF"],
+  "order": 50
+}

@@ -1,0 +1,1 @@
+{"id":"splay-tree","title":"伸展树","description":"通过旋转将访问节点移至根部的自调整二叉搜索树","category":"树形结构","difficulty":"advanced","tags":["伸展树","自调整","摊还","旋转"],"order":48}
