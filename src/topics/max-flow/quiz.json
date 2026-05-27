@@ -1,0 +1,57 @@
+[
+  {
+    "question": "最大流最小割定理（Max-Flow Min-Cut Theorem）的核心结论是什么？",
+    "options": [
+      "网络中的最大流等于所有边容量之和",
+      "网络中的最大流等于最小割的容量",
+      "最大流的值等于源点的出度乘以平均容量",
+      "最小割的容量总是等于网络中边的数量"
+    ],
+    "answer": 1,
+    "explanation": "最大流最小割定理是网络流理论的基石，它指出：在任意网络中，从源点到汇点的最大流的值等于所有割中容量最小的那个割的容量。这意味着「流的上界」和「切断网络的代价」是同一个值，为最大流算法提供了理论保证。"
+  },
+  {
+    "question": "在 Ford-Fulkerson 算法中，什么是增广路径（Augmenting Path）？",
+    "options": [
+      "从源点到汇点的一条最短路径",
+      "残余图中从源点到汇点的一条可达路径",
+      "容量最大的那条路径",
+      "包含所有节点的一条哈密顿路径"
+    ],
+    "answer": 1,
+    "explanation": "增广路径是残余图（Residual Graph）中从源点 s 到汇点 t 的一条可达路径。沿着增广路径可以增加流量，增加的量等于路径上所有边的残余容量的最小值。当残余图中不再存在增广路径时，当前流就是最大流。"
+  },
+  {
+    "question": "残余图（Residual Graph）中反向边的作用是什么？",
+    "options": [
+      "增加网络的连通性",
+      "允许算法「撤销」之前分配的流量，进行流量调整",
+      "保证图是无环的",
+      "减少算法的时间复杂度"
+    ],
+    "answer": 1,
+    "explanation": "反向边是残余图的核心机制。当正向边 (u,v) 上有 f 的流量时，反向边 (v,u) 的残余容量为 f。这允许算法在后续迭代中将流量从 v 撤回到 u，相当于「取消」之前的决策。没有反向边，算法可能陷入局部最优，无法找到真正的最大流。"
+  },
+  {
+    "question": "Ford-Fulkerson 算法和 Edmonds-Karp 算法的主要区别是什么？",
+    "options": [
+      "Ford-Fulkerson 使用 DFS 寻找增广路径，Edmonds-Karp 使用 BFS",
+      "Ford-Fulkerson 处理无向图，Edmonds-Karp 处理有向图",
+      "Ford-Fulkerson 不使用残余图，Edmonds-Karp 使用残余图",
+      "两者完全相同，只是命名不同"
+    ],
+    "answer": 0,
+    "explanation": "Ford-Fulkerson 是一个方法框架，使用 DFS 在残余图中寻找增广路径；Edmonds-Karp 是其改进版本，使用 BFS 寻找最短增广路径。这个看似微小的改变带来了本质的复杂度提升：Ford-Fulkerson 在整数容量下可能需要 O(E * max_flow) 次迭代，而 Edmonds-Karp 保证 O(VE^2) 的时间复杂度。"
+  },
+  {
+    "question": "Edmonds-Karp 算法（BFS 实现的 Ford-Fulkerson）的时间复杂度是多少？",
+    "options": [
+      "O(V + E)",
+      "O(VE)",
+      "O(VE^2)",
+      "O(V^2 * E)"
+    ],
+    "answer": 2,
+    "explanation": "Edmonds-Karp 算法的时间复杂度为 O(VE^2)。证明的关键在于：每次 BFS 找到的增广路径是当前残余图中的最短路径，每条边成为关键边（即瓶颈边）的次数最多为 O(V) 次，总共有 E 条边，每次增广需要 O(E) 的 BFS，因此总复杂度为 O(VE^2)。"
+  }
+]

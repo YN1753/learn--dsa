@@ -1,0 +1,9 @@
+{
+  "id": "bipartite-graph",
+  "title": "二分图",
+  "description": "顶点可分为两个不相交集合且同集合内无边的图，匹配问题的基础",
+  "category": "树形结构",
+  "difficulty": "intermediate",
+  "tags": ["二分图", "染色", "匹配", "匈牙利算法"],
+  "order": 40
+}

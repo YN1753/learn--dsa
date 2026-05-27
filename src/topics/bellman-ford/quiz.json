@@ -1,0 +1,57 @@
+[
+  {
+    "question": "Bellman-Ford 算法与 Dijkstra 算法的主要区别是什么？",
+    "options": [
+      "Bellman-Ford 时间复杂度更低",
+      "Bellman-Ford 能处理负权边并检测负权环，Dijkstra 不能",
+      "Bellman-Ford 只能处理有向图",
+      "Bellman-Ford 求解全源最短路径"
+    ],
+    "answer": 1,
+    "explanation": "Bellman-Ford 算法能够正确处理含有负权边的图，并且能够通过额外的一轮松弛检测负权环。而 Dijkstra 算法基于贪心策略，假设已确定的最短距离不会再被更新，负权边会打破这一假设，因此 Dijkstra 无法处理负权边。"
+  },
+  {
+    "question": "Bellman-Ford 算法如何检测负权环？",
+    "options": [
+      "检查 dist 数组中是否有负数",
+      "在 V-1 轮松弛后，再进行第 V 轮，如果仍能松弛则存在负权环",
+      "统计松弛的总次数，超过 V 次则存在负权环",
+      "检查是否有顶点的距离始终为无穷大"
+    ],
+    "answer": 1,
+    "explanation": "在没有负权环的图中，最短路径最多包含 V-1 条边，因此 V-1 轮松弛就足够了。如果第 V 轮（额外一轮）仍然能够松弛某条边，说明存在负权环——因为正常情况下不可能在 V-1 轮之后还能找到更短的路径。"
+  },
+  {
+    "question": "Bellman-Ford 算法的时间复杂度是多少？",
+    "options": [
+      "O(V²)",
+      "O(V log V)",
+      "O(VE)",
+      "O(V³)"
+    ],
+    "answer": 2,
+    "explanation": "Bellman-Ford 算法执行 V-1 轮松弛，每轮遍历所有 E 条边，因此时间复杂度为 O(VE)。对于稀疏图（E 接近 V），复杂度接近 O(V²)；对于稠密图（E 接近 V²），复杂度接近 O(V³)。"
+  },
+  {
+    "question": "在 Bellman-Ford 算法中，「松弛」(Relaxation) 操作的含义是什么？",
+    "options": [
+      "删除图中的冗余边",
+      "如果经过某条边能找到更短路径，就更新目标顶点的最短距离",
+      "将负权边转换为正权边",
+      "减少算法的时间复杂度"
+    ],
+    "answer": 1,
+    "explanation": "松弛操作是 Bellman-Ford 算法的核心。对于边 (u, v, w)，如果 dist[u] + w < dist[v]，说明从源点经过 u 到达 v 比当前已知路径更短，因此更新 dist[v] = dist[u] + w。每次松弛都是在尝试找到更优的路径。"
+  },
+  {
+    "question": "SPFA 算法与原版 Bellman-Ford 算法的关系是什么？",
+    "options": [
+      "SPFA 是完全不同的算法",
+      "SPFA 是 Bellman-Ford 的队列优化版本，只检查被更新过的顶点相关的边",
+      "SPFA 的时间复杂度一定比 Bellman-Ford 低",
+      "SPFA 不能检测负权环"
+    ],
+    "answer": 1,
+    "explanation": "SPFA（Shortest Path Faster Algorithm）是 Bellman-Ford 的队列优化版本。核心思想是：如果某个顶点的距离没有被更新，那么以它为起点的边也不需要检查。SPFA 使用队列维护需要检查的顶点，平均时间复杂度为 O(E)，但最坏情况仍为 O(VE)。SPFA 同样可以通过记录入队次数来检测负权环。"
+  }
+]

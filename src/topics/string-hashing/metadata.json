@@ -1,0 +1,9 @@
+{
+  "id": "string-hashing",
+  "title": "字符串哈希",
+  "description": "通过滚动哈希实现 O(n+m) 字符串匹配的 Rabin-Karp 算法",
+  "category": "搜索算法",
+  "difficulty": "intermediate",
+  "tags": ["字符串", "哈希", "滚动哈希", "Rabin-Karp"],
+  "order": 38
+}

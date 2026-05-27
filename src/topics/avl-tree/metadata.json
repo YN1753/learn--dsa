@@ -1,0 +1,1 @@
+{"id":"avl-tree","title":"AVL树","description":"通过旋转操作保持平衡的二叉搜索树，保证 O(log n) 操作","category":"树形结构","difficulty":"advanced","tags":["平衡BST","旋转","自平衡","O(logn)"],"order":36}

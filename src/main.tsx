@@ -37,6 +37,11 @@ import './topics/non-comparison-sort/index'
 import './topics/skip-list/index'
 import './topics/bloom-filter/index'
 import './topics/floyd-warshall/index'
+import './topics/avl-tree/index'
+import './topics/string-hashing/index'
+import './topics/bellman-ford/index'
+import './topics/max-flow/index'
+import './topics/bipartite-graph/index'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
