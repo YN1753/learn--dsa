@@ -1,0 +1,9 @@
+{
+  "id": "euler-tour",
+  "title": "欧拉序",
+  "description": "DFS遍历树时记录的节点序列，将树上问题转化为序列问题",
+  "category": "树上技巧",
+  "difficulty": "medium",
+  "tags": ["数据结构", "树", "线段树", "LCA"],
+  "order": 118
+}

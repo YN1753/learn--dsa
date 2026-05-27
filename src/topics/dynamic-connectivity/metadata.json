@@ -1,0 +1,9 @@
+{
+  "id": "dynamic-connectivity",
+  "title": "动态图连通性",
+  "description": "在线段树分治框架下，利用可撤销并查集高效处理动态图的加边、删边与连通性查询",
+  "category": "图论高级",
+  "difficulty": "advanced",
+  "tags": ["图论", "数据结构", "并查集", "线段树分治"],
+  "order": 119
+}

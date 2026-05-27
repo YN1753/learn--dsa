@@ -1,0 +1,9 @@
+{
+  "id": "offline-algorithms",
+  "title": "离线算法",
+  "description": "预先知道所有查询并重新排列处理顺序以优化性能的算法范式",
+  "category": "离线算法",
+  "difficulty": "medium",
+  "tags": ["算法", "离线", "分治", "排序"],
+  "order": 120
+}

@@ -1,0 +1,9 @@
+{
+  "id": "quadratic-residue",
+  "title": "二次剩余",
+  "description": "模意义下的平方根问题，数论与密码学的核心工具",
+  "category": "数论",
+  "difficulty": "hard",
+  "tags": ["数论", "二次剩余", "勒让德符号", "Cipolla算法"],
+  "order": 117
+}

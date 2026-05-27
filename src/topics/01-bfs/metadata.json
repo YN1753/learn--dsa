@@ -1,0 +1,9 @@
+{
+  "id": "01-bfs",
+  "title": "0-1 BFS",
+  "description": "边权仅为0和1时的最短路算法，使用双端队列实现O(V+E)复杂度",
+  "category": "图论算法",
+  "difficulty": "intermediate",
+  "tags": ["图论", "最短路", "BFS", "双端队列"],
+  "order": 116
+}

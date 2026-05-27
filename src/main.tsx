@@ -117,6 +117,11 @@ import './topics/min25-sieve/index'
 import './topics/fwht/index'
 import './topics/mobius-inversion/index'
 import './topics/virtual-tree/index'
+import './topics/01-bfs/index'
+import './topics/quadratic-residue/index'
+import './topics/euler-tour/index'
+import './topics/dynamic-connectivity/index'
+import './topics/offline-algorithms/index'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
