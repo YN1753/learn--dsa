@@ -76,7 +76,12 @@ import './topics/push-relabel/index'
 import './topics/persistent-segment-tree/index'
 import './topics/randomized-algorithm/index'
 import './topics/amortized-analysis/index'
+import './topics/sparse-table/index'
 import './topics/chinese-remainder-theorem/index'
+import './topics/kmp-automaton/index'
+import './topics/matrix-exponentiation/index'
+import './topics/miller-rabin/index'
+import './topics/fenwick-range/index'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

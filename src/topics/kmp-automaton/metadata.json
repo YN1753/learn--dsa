@@ -1,0 +1,9 @@
+{
+  "id": "kmp-automaton",
+  "title": "KMP自动机",
+  "description": "基于KMP失配函数构建的确定有限状态自动机(DFA)，实现O(n)字符串匹配",
+  "category": "字符串算法",
+  "difficulty": "intermediate",
+  "tags": ["字符串匹配", "自动机", "DFA", "KMP", "状态转移"],
+  "order": 77
+}

@@ -1,0 +1,9 @@
+{
+  "id": "miller-rabin",
+  "title": "Miller-Rabin素性测试",
+  "description": "基于概率的高效素数判定算法，结合费马小定理与二次探测",
+  "category": "数论",
+  "difficulty": "advanced",
+  "tags": ["数论", "素数", "概率算法", "密码学"],
+  "order": 78
+}
