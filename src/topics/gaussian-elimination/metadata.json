@@ -1,0 +1,9 @@
+{
+  "id": "gaussian-elimination",
+  "title": "高斯消元",
+  "description": "通过行变换将线性方程组化为行阶梯形，求解方程组的经典算法",
+  "category": "线性代数",
+  "difficulty": "intermediate",
+  "tags": ["线性代数", "矩阵", "方程组", "行变换"],
+  "order": 82
+}

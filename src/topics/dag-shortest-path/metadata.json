@@ -1,0 +1,9 @@
+{
+  "id": "dag-shortest-path",
+  "title": "DAG最短路径",
+  "description": "利用拓扑序在有向无环图上高效求解单源最短路径，时间复杂度O(V+E)",
+  "category": "图论算法",
+  "difficulty": "intermediate",
+  "tags": ["图论", "最短路径", "拓扑排序", "动态规划", "DAG"],
+  "order": 84
+}

@@ -1,0 +1,9 @@
+{
+  "id": "huffman-coding",
+  "title": "哈夫曼编码",
+  "description": "基于贪心策略构建最优前缀码的无损数据压缩算法",
+  "category": "贪心算法",
+  "difficulty": "intermediate",
+  "tags": ["贪心算法", "树", "编码", "压缩", "优先队列"],
+  "order": 83
+}

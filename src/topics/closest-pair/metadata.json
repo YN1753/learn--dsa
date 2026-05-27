@@ -1,0 +1,9 @@
+{
+  "id": "closest-pair",
+  "title": "最近点对",
+  "description": "使用分治法在O(n log n)时间内找到平面上距离最近的一对点",
+  "category": "计算几何",
+  "difficulty": "intermediate",
+  "tags": ["计算几何", "分治", "排序"],
+  "order": 85
+}

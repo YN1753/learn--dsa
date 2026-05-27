@@ -80,8 +80,13 @@ import './topics/sparse-table/index'
 import './topics/chinese-remainder-theorem/index'
 import './topics/kmp-automaton/index'
 import './topics/matrix-exponentiation/index'
+import './topics/pollard-rho/index'
 import './topics/miller-rabin/index'
 import './topics/fenwick-range/index'
+import './topics/dag-shortest-path/index'
+import './topics/closest-pair/index'
+import './topics/huffman-coding/index'
+import './topics/gaussian-elimination/index'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
