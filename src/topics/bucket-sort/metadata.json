@@ -1,0 +1,9 @@
+{
+  "id": "bucket-sort",
+  "title": "桶排序",
+  "description": "将元素分配到多个桶中分别排序的非比较排序算法",
+  "category": "排序",
+  "difficulty": "intermediate",
+  "tags": ["排序", "非比较排序", "桶", "线性时间"],
+  "order": 16
+}

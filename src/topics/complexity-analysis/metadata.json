@@ -1,0 +1,9 @@
+{
+  "id": "complexity-analysis",
+  "title": "复杂度分析",
+  "description": "算法时间复杂度与空间复杂度的分析方法，Big-O、Big-Ω、Big-Θ记号",
+  "category": "绪论与基础",
+  "difficulty": "beginner",
+  "tags": ["复杂度", "Big-O", "时间复杂度", "空间复杂度"],
+  "order": 0
+}

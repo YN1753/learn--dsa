@@ -10,6 +10,7 @@ import './topics/binary-tree/index'
 import './topics/hash-table/index'
 import './topics/heap/index'
 import './topics/recursion/index'
+import './topics/divide-and-conquer/index'
 import './topics/graph/index'
 import './topics/sorting/index'
 import './topics/shortest-path/index'
@@ -149,6 +150,10 @@ import './topics/insertion-sort/index'
 import './topics/shell-sort/index'
 import './topics/counting-sort/index'
 import './topics/radix-sort/index'
+import './topics/array/index'
+import './topics/queue/index'
+import './topics/complexity-analysis/index'
+import './topics/bucket-sort/index'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

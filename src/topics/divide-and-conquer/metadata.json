@@ -1,0 +1,9 @@
+{
+  "id": "divide-and-conquer",
+  "title": "分治法",
+  "description": "将问题分解为子问题、递归求解、合并结果的算法设计范式",
+  "category": "绪论与基础",
+  "difficulty": "beginner",
+  "tags": ["分治", "递归", "算法设计", "Master定理"],
+  "order": 2
+}
