@@ -1,0 +1,9 @@
+{
+  "id": "inclusion-exclusion",
+  "title": "容斥原理",
+  "description": "通过奇加偶减计算集合并集大小的组合计数方法",
+  "category": "组合数学",
+  "difficulty": "intermediate",
+  "tags": ["组合数学", "计数原理", "集合论", "数论"],
+  "order": 68
+}

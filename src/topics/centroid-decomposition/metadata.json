@@ -1,0 +1,9 @@
+{
+  "id": "centroid-decomposition",
+  "title": "点分治",
+  "description": "基于树的重心递归分解，将树上路径问题转化为 O(n log n) 的分治求解",
+  "category": "高级数据结构",
+  "difficulty": "advanced",
+  "tags": ["树", "分治", "重心", "路径统计"],
+  "order": 70
+}

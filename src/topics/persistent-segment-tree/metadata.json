@@ -1,0 +1,9 @@
+{
+  "id": "persistent-segment-tree",
+  "title": "可持久化线段树",
+  "description": "保留历史版本的线段树，通过路径复制实现高效版本管理和区间查询",
+  "category": "高级数据结构",
+  "difficulty": "advanced",
+  "tags": ["线段树", "可持久化", "路径复制", "主席树", "函数式"],
+  "order": 67
+}
