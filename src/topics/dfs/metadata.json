@@ -1,0 +1,9 @@
+{
+  "id": "dfs",
+  "title": "深度优先搜索 (DFS)",
+  "description": "图的深度优先遍历算法，使用栈或递归探索到底再回溯",
+  "category": "图论算法",
+  "difficulty": "beginner",
+  "tags": ["图论", "DFS", "递归", "栈", "遍历", "回溯"],
+  "order": 128
+}

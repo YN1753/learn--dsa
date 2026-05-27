@@ -1,0 +1,9 @@
+{
+  "id": "bfs",
+  "title": "广度优先搜索 (BFS)",
+  "description": "图的层次遍历算法，使用队列逐层扩展，求解最短路径等问题",
+  "category": "图论算法",
+  "difficulty": "beginner",
+  "tags": ["图论", "BFS", "队列", "最短路", "遍历"],
+  "order": 127
+}

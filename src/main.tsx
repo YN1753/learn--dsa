@@ -127,6 +127,11 @@ import './topics/cdq-divide-conquer/index'
 import './topics/parallel-binary-search/index'
 import './topics/long-chain-decomposition/index'
 import './topics/generalized-suffix-automaton/index'
+import './topics/coordinate-compression/index'
+import './topics/meet-in-the-middle/index'
+import './topics/bfs/index'
+import './topics/dfs/index'
+import './topics/ternary-search/index'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

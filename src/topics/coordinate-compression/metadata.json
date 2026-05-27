@@ -1,0 +1,9 @@
+{
+  "id": "coordinate-compression",
+  "title": "坐标压缩 (Coordinate Compression)",
+  "description": "将大范围离散值映射为连续小范围值的技巧，常配合线段树等使用",
+  "category": "数据结构技巧",
+  "difficulty": "intermediate",
+  "tags": ["离散化", "线段树", "映射", "预处理"],
+  "order": 131
+}
