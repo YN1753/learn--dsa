@@ -1,0 +1,9 @@
+{
+  "id": "dinic",
+  "title": "Dinic最大流算法",
+  "description": "基于层次图和阻塞流的高效最大流算法，时间复杂度O(V²E)",
+  "category": "图论算法",
+  "difficulty": "advanced",
+  "tags": ["最大流", "层次图", "阻塞流", "网络流"],
+  "order": 56
+}

@@ -1,0 +1,9 @@
+{
+  "id": "manacher",
+  "title": "Manacher算法",
+  "description": "线性时间查找最长回文子串的经典算法",
+  "category": "字符串算法",
+  "difficulty": "intermediate",
+  "tags": ["字符串", "回文", "动态规划", "线性算法"],
+  "order": 59
+}

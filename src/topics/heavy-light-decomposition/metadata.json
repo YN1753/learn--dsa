@@ -1,0 +1,9 @@
+{
+  "id": "heavy-light-decomposition",
+  "title": "树链剖分",
+  "description": "将树分解为重链和轻链，结合线段树高效处理树上路径查询与修改",
+  "category": "高级数据结构",
+  "difficulty": "advanced",
+  "tags": ["树", "线段树", "路径查询", "DFS序", "重链剖分"],
+  "order": 57
+}

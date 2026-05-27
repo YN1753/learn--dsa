@@ -1,0 +1,9 @@
+{
+  "id": "2-sat",
+  "title": "2-SAT问题",
+  "description": "利用蕴含图与强连通分量判定布尔可满足性，线性时间构造解",
+  "category": "图论算法",
+  "difficulty": "advanced",
+  "tags": ["图论", "强连通分量", "布尔可满足性", "蕴含图"],
+  "order": 60
+}

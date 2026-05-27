@@ -1,0 +1,57 @@
+[
+  {
+    "question": "Dinic算法中，「层次图」是通过什么方式构建的？",
+    "options": [
+      "深度优先搜索(DFS)",
+      "广度优先搜索(BFS)",
+      "Dijkstra算法",
+      "拓扑排序"
+    ],
+    "answer": 1,
+    "explanation": "Dinic算法使用BFS从源点出发，根据节点到源点的距离（层数）构建层次图。只有从第i层到第i+1层的边才会被保留在层次图中，这保证了增广路径的最短性。"
+  },
+  {
+    "question": "Dinic算法的时间复杂度是多少？",
+    "options": [
+      "O(VE²)",
+      "O(V²E)",
+      "O(V³)",
+      "O(E² log V)"
+    ],
+    "answer": 1,
+    "explanation": "Dinic算法的时间复杂度为O(V²E)。每轮BFS构建层次图需要O(E)时间，每轮DFS寻找阻塞流需要O(VE)时间，最多进行O(V)轮BFS（因为每次层次图中汇点的层数至少增加1），所以总时间复杂度为O(V²E)。对于单位容量网络，复杂度可优化到O(E√V)。"
+  },
+  {
+    "question": "Dinic算法中「阻塞流」(Blocking Flow)的含义是什么？",
+    "options": [
+      "使网络中所有边都饱和的流",
+      "在层次图中无法再找到从源点到汇点的增广路径时的流",
+      "使源点出发的所有边都满流的流",
+      "使汇点入边都饱和的流"
+    ],
+    "answer": 1,
+    "explanation": "阻塞流是指在当前层次图中，不存在从源点到汇点的增广路径时的流。此时层次图中每条从源到汇的路径上至少有一条边的剩余容量为0（饱和）。阻塞流不一定是最大流，但它是一个阶段性的重要结果。"
+  },
+  {
+    "question": "Dinic算法与Edmonds-Karp算法的主要区别是什么？",
+    "options": [
+      "Dinic使用DFS找增广路，Edmonds-Karp使用BFS",
+      "Dinic构建层次图并寻找阻塞流，Edmonds-Karp每次只找一条最短增广路",
+      "Dinic只适用于无向图，Edmonds-Karp适用于有向图",
+      "Dinic的时间复杂度更高"
+    ],
+    "answer": 1,
+    "explanation": "Edmonds-Karp每次BFS找到一条最短增广路并沿其增广，时间复杂度O(VE²)。Dinic则先用BFS构建层次图，然后在层次图上用DFS一次性找到阻塞流（多条增广路），每次迭代效率更高，总时间复杂度O(V²E)，优于Edmonds-Karp。"
+  },
+  {
+    "question": "ISAP(Improved Shortest Augmenting Path)算法对Dinic的主要优化是什么？",
+    "options": [
+      "使用优先队列代替普通队列",
+      "避免每轮重新BFS构建层次图，而是动态更新距离标号",
+      "使用并查集加速路径查找",
+      "引入随机化策略"
+    ],
+    "answer": 1,
+    "explanation": "ISAP的核心优化是不再每轮都重新BFS构建层次图，而是维护一个距离标号(distance label)。当DFS过程中遇到断层（没有可行弧）时，才更新当前节点的距离标号（gap优化），从而减少BFS的次数。ISAP在实践中通常比标准Dinic更快，但在最坏情况下复杂度相同。"
+  }
+]

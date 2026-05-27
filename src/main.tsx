@@ -57,6 +57,11 @@ import './topics/suffix-tree/index'
 import './topics/z-algorithm/index'
 import './topics/strongly-connected-components/index'
 import './topics/prefix-function/index'
+import './topics/manacher/index'
+import './topics/2-sat/index'
+import './topics/cartesian-tree/index'
+import './topics/heavy-light-decomposition/index'
+import './topics/dinic/index'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

@@ -1,0 +1,9 @@
+{
+  "id": "cartesian-tree",
+  "title": "笛卡尔树",
+  "description": "同时满足BST和堆性质的二叉树，O(n)单调栈构建，RMQ与Treap的核心基础",
+  "category": "高级树结构",
+  "difficulty": "advanced",
+  "tags": ["树结构", "单调栈", "RMQ", "Treap", "笛卡尔树"],
+  "order": 58
+}
