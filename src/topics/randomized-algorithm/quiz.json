@@ -1,0 +1,47 @@
+[
+  {
+    "question": "随机快速排序的期望时间复杂度是多少？",
+    "options": ["O(n)", "O(n log n)", "O(n^2)", "O(log n)"],
+    "answer": 1,
+    "explanation": "随机快速排序通过随机选择 pivot，避免了最坏情况的系统性出现。无论输入分布如何，其期望时间复杂度为 O(n log n)。这是随机化算法的核心优势之一。"
+  },
+  {
+    "question": "以下关于 Las Vegas 算法和 Monte Carlo 算法的说法，哪一项是正确的？",
+    "options": [
+      "Las Vegas 算法结果可能出错，Monte Carlo 算法结果一定正确",
+      "Las Vegas 算法结果一定正确，但运行时间是随机的；Monte Carlo 算法运行时间确定，但结果可能出错",
+      "两者的结果都一定正确",
+      "两者的运行时间都是确定的"
+    ],
+    "answer": 1,
+    "explanation": "Las Vegas 算法（如随机快速排序）总是给出正确结果，但运行时间是随机变量。Monte Carlo 算法（如 Miller-Rabin 素性测试）运行时间确定，但结果有小概率出错。这是两类随机化算法的根本区别。"
+  },
+  {
+    "question": "随机选择算法（Randomized Select）求第 k 小元素的期望时间复杂度是多少？",
+    "options": ["O(n log n)", "O(n^2)", "O(n)", "O(log n)"],
+    "answer": 2,
+    "explanation": "随机选择算法每次随机选取 pivot 进行划分，期望只需线性时间即可找到第 k 小元素，期望时间复杂度为 O(n)。最坏情况为 O(n^2)，但概率极低。"
+  },
+  {
+    "question": "Miller-Rabin 素性测试属于哪种类型的随机化算法？",
+    "options": [
+      "Las Vegas 算法",
+      "Monte Carlo 算法",
+      "确定性算法",
+      "贪心算法"
+    ],
+    "answer": 1,
+    "explanation": "Miller-Rabin 素性测试是 Monte Carlo 算法。它在多项式时间内完成，但存在将合数误判为素数的可能（伪素数）。通过多次独立测试，可以将错误概率降到极低。"
+  },
+  {
+    "question": "在哈希表中使用通用哈希（Universal Hashing）的主要目的是什么？",
+    "options": [
+      "减少代码复杂度",
+      "使哈希函数完全避免冲突",
+      "对任意输入分布，期望操作时间为 O(1)",
+      "节省存储空间"
+    ],
+    "answer": 2,
+    "explanation": "通用哈希从一族哈希函数中随机选择一个，使得对于任意输入分布，冲突的期望次数有界，从而保证哈希表操作的期望时间为 O(1)。它不能完全避免冲突，但能消除对手构造的最坏输入的影响。"
+  }
+]

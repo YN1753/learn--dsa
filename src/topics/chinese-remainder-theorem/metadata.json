@@ -1,0 +1,9 @@
+{
+  "id": "chinese-remainder-theorem",
+  "title": "中国剩余定理",
+  "description": "求解同余方程组的经典定理，在密码学和大数计算中有重要应用",
+  "category": "数论",
+  "difficulty": "intermediate",
+  "tags": ["数论", "同余", "模运算", "密码学"],
+  "order": 73
+}

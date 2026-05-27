@@ -1,0 +1,9 @@
+{
+  "id": "lyndon-factorization",
+  "title": "Lyndon分解",
+  "description": "将字符串唯一分解为字典序非增的Lyndon词序列，Duval算法O(n)实现",
+  "category": "字符串算法",
+  "difficulty": "advanced",
+  "tags": ["字符串", "Lyndon词", "Duval算法", "最小表示法", "BWT"],
+  "order": 71
+}

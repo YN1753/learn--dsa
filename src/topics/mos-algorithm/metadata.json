@@ -1,0 +1,9 @@
+{
+  "id": "mos-algorithm",
+  "title": "莫队算法",
+  "description": "基于分块排序的离线区间查询算法，通过巧妙的查询排序将复杂度优化至O(n√m)",
+  "category": "离线算法",
+  "difficulty": "intermediate",
+  "tags": ["离线算法", "分块", "区间查询", "排序优化"],
+  "order": 72
+}

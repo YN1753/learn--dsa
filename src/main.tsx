@@ -69,9 +69,14 @@ import './topics/link-cut-tree/index'
 import './topics/palindromic-tree/index'
 import './topics/euler-totient/index'
 import './topics/centroid-decomposition/index'
+import './topics/lyndon-factorization/index'
+import './topics/mos-algorithm/index'
 import './topics/inclusion-exclusion/index'
 import './topics/push-relabel/index'
 import './topics/persistent-segment-tree/index'
+import './topics/randomized-algorithm/index'
+import './topics/amortized-analysis/index'
+import './topics/chinese-remainder-theorem/index'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

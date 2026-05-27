@@ -1,0 +1,9 @@
+{
+  "id": "randomized-algorithm",
+  "title": "随机化算法",
+  "description": "利用随机性获得期望高效性能的算法设计范式",
+  "category": "算法设计",
+  "difficulty": "intermediate",
+  "tags": ["随机化", "概率", "期望复杂度", "素性测试"],
+  "order": 74
+}

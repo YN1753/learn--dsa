@@ -1,0 +1,57 @@
+[
+  {
+    "question": "一个字符串 w 是Lyndon词的充要条件是什么？",
+    "options": [
+      "w 是回文串",
+      "w 严格小于它的所有真后缀",
+      "w 严格小于它的所有真前缀",
+      "w 的长度为素数"
+    ],
+    "answer": 1,
+    "explanation": "Lyndon词的定义是：一个字符串 w 严格字典序小于它的所有真后缀。例如「ababb」是Lyndon词，因为它的真后缀有「babb」「abb」「bb」「b」，都严格大于「ababb」。"
+  },
+  {
+    "question": "Duval算法进行Lyndon分解的时间复杂度和空间复杂度分别是多少？",
+    "options": [
+      "O(n log n) 时间，O(n) 空间",
+      "O(n) 时间，O(n) 空间",
+      "O(n) 时间，O(1) 额外空间",
+      "O(n²) 时间，O(1) 空间"
+    ],
+    "answer": 2,
+    "explanation": "Duval算法是一个在线算法，时间复杂度为 O(n)，且只需要 O(1) 的额外空间（不计输出存储）。它通过三个指针 i, j, k 在单次扫描中完成分解。"
+  },
+  {
+    "question": "字符串「aababb」的Lyndon分解结果是什么？",
+    "options": [
+      "「a」 「ababb」",
+      "「aab」 「abb」",
+      "「aababb」",
+      "「aa」 「babb」"
+    ],
+    "answer": 2,
+    "explanation": "「aababb」本身就是一个Lyndon词，因为它的所有真后缀（「ababb」「babb」「abb」「bb」「b」）都严格大于它。因此Lyndon分解结果就是它自身，只有一个因子。"
+  },
+  {
+    "question": "利用Lyndon分解求字符串的最小表示法（字典序最小的循环同构），其核心原理是什么？",
+    "options": [
+      "取Lyndon分解的第一个因子",
+      "对 s+s 做Lyndon分解，找到长度 >= n 的因子的起始位置",
+      "取Lyndon分解的最后一个因子",
+      "对字符串排序后取最小的"
+    ],
+    "answer": 1,
+    "explanation": "对字符串 s 连接自身得到 s+s，然后进行Lyndon分解。在分解结果中，找到第一个长度 >= |s| 的Lyndon因子，其起始位置（模 |s|）就是最小表示法的起始位置。这是因为Lyndon词的性质保证了该位置开始的循环同构字典序最小。"
+  },
+  {
+    "question": "以下关于Lyndon分解的应用，哪一项是正确的？",
+    "options": [
+      "Lyndon分解只能用于英文字符串",
+      "Burrows-Wheeler变换(BWT)可以通过Lyndon分解高效计算",
+      "Lyndon分解的结果不唯一，取决于起始位置",
+      "Lyndon分解的时间复杂度下界是 O(n log n)"
+    ],
+    "answer": 1,
+    "explanation": "BWT（Burrows-Wheeler变换）与Lyndon分解密切相关。通过对字符串的Lyndon分解，可以在 O(n) 时间内计算BWT。Lyndon分解的结果是唯一的（Chen-Fox-Lyndon定理），不依赖于算法的执行方式。"
+  }
+]
