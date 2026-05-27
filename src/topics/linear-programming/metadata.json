@@ -1,0 +1,9 @@
+{
+  "id": "linear-programming",
+  "title": "线性规划",
+  "description": "在约束条件下优化线性目标函数的数学方法，广泛应用于资源分配和决策优化",
+  "category": "优化",
+  "difficulty": "advanced",
+  "tags": ["优化", "线性代数", "单纯形法", "对偶理论"],
+  "order": 95
+}

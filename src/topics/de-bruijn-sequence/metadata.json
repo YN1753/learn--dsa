@@ -1,0 +1,9 @@
+{
+  "id": "de-bruijn-sequence",
+  "title": "De Bruijn序列",
+  "description": "覆盖所有k进制n元组的最短循环序列，基于欧拉回路构造",
+  "category": "组合数学",
+  "difficulty": "advanced",
+  "tags": ["组合数学", "图论", "欧拉回路", "序列", "编码"],
+  "order": 91
+}

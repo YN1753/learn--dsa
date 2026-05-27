@@ -1,0 +1,9 @@
+{
+  "id": "fft",
+  "title": "快速傅里叶变换",
+  "description": "O(n log n) 的离散傅里叶变换算法，蝶形运算实现高效多项式乘法与信号处理",
+  "category": "数学",
+  "difficulty": "advanced",
+  "tags": ["数学", "多项式", "变换", "信号处理"],
+  "order": 93
+}

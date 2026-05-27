@@ -1,0 +1,47 @@
+[
+  {
+    "question": "快速傅里叶变换（FFT）将长度为 N 的离散傅里叶变换（DFT）的时间复杂度从 O(N²) 降低到多少？",
+    "options": ["O(N)", "O(N log N)", "O(N²)", "O(log N)"],
+    "answer": 1,
+    "explanation": "FFT 利用分治思想和单位根的性质，将 DFT 分解为更小的子问题，通过蝶形运算合并结果，将时间复杂度从 O(N²) 降低到 O(N log N)。这是 Cooley-Tukey 算法的核心贡献。"
+  },
+  {
+    "question": "在 FFT 的蝶形运算中，如果已知两个子问题的结果 A[k] 和 B[k]，则合并公式中用到的旋转因子是什么？",
+    "options": [
+      "ω_N^k = e^{2πi·k/N}",
+      "ω_N^k = e^{πi·k/N}",
+      "ω_N^k = e^{2πi/N}",
+      "ω_N^k = e^{-2πi·k/N}"
+    ],
+    "answer": 0,
+    "explanation": "FFT 中的旋转因子（twiddle factor）定义为 ω_N^k = e^{2πi·k/N}，其中 i 是虚数单位，N 是变换长度，k 是索引。这个 N 次单位根具有周期性和对称性，是 FFT 分治合并的关键。"
+  },
+  {
+    "question": "使用 FFT 进行两个长度为 N 的多项式乘法，总时间复杂度是多少？",
+    "options": ["O(N²)", "O(N log N)", "O(N)", "O(N² log N)"],
+    "answer": 1,
+    "explanation": "多项式乘法使用 FFT 的步骤：(1) 对两个多项式分别做 FFT，各 O(N log N)；(2) 逐点相乘，O(N)；(3) 做逆 FFT，O(N log N)。总时间复杂度为 O(N log N)，远优于朴素的 O(N²) 卷积。"
+  },
+  {
+    "question": "逆快速傅里叶变换（IFFT）与 FFT 的主要区别是什么？",
+    "options": [
+      "IFFT 使用旋转因子的共轭，并在最后除以 N",
+      "IFFT 只能处理实数输入",
+      "IFFT 的时间复杂度更高",
+      "IFFT 不需要蝶形运算"
+    ],
+    "answer": 0,
+    "explanation": "IFFT 的核心步骤与 FFT 相同，但使用旋转因子的共轭（即 ω_N^{-k}），并在最后将每个结果除以 N。这保证了 IFFT(FFT(a)) = a，即正变换和逆变换互为逆运算。时间复杂度与 FFT 相同，仍为 O(N log N)。"
+  },
+  {
+    "question": "以下哪种应用最适合使用 FFT？",
+    "options": [
+      "在有序数组中查找元素",
+      "两个大整数的快速乘法",
+      "图的最短路径计算",
+      "哈希表的冲突解决"
+    ],
+    "answer": 1,
+    "explanation": "FFT 可以将大整数乘法转化为多项式乘法：将大整数的每一位看作多项式的系数，用 FFT 在 O(N log N) 时间内完成卷积，再处理进位。这比朴素的 O(N²) 乘法快得多，是许多大数库的核心算法。此外 FFT 也广泛用于信号处理、图像处理等领域。"
+  }
+]

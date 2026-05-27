@@ -1,0 +1,9 @@
+{
+  "id": "ntt",
+  "title": "数论变换NTT",
+  "description": "模意义下的快速傅里叶变换，用于高效多项式乘法",
+  "category": "数学",
+  "difficulty": "advanced",
+  "tags": ["数学", "多项式", "数论", "NTT", "快速变换"],
+  "order": 92
+}

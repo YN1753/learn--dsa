@@ -91,7 +91,12 @@ import './topics/gaussian-elimination/index'
 import './topics/tree-diameter/index'
 import './topics/line-intersection/index'
 import './topics/cycle-detection/index'
+import './topics/de-bruijn-sequence/index'
 import './topics/lca/index'
+import './topics/iterative-deepening/index'
+import './topics/linear-programming/index'
+import './topics/fft/index'
+import './topics/ntt/index'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
