@@ -17,6 +17,11 @@ import './topics/binary-search/index'
 import './topics/string-matching/index'
 import './topics/union-find/index'
 import './topics/dynamic-programming/index'
+import './topics/sliding-window/index'
+import './topics/backtracking/index'
+import './topics/topological-sort/index'
+import './topics/greedy/index'
+import './topics/two-pointers/index'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

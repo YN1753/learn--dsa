@@ -1,0 +1,9 @@
+{
+  "id": "greedy",
+  "title": "贪心算法",
+  "description": "每一步都选择局部最优解，期望得到全局最优的算法策略",
+  "category": "搜索算法",
+  "difficulty": "intermediate",
+  "tags": ["贪心", "局部最优", "活动选择"],
+  "order": 16
+}
