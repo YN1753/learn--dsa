@@ -97,6 +97,11 @@ import './topics/iterative-deepening/index'
 import './topics/linear-programming/index'
 import './topics/fft/index'
 import './topics/ntt/index'
+import './topics/hopcroft-karp/index'
+import './topics/sprague-grundy/index'
+import './topics/matroid/index'
+import './topics/burnside-lemma/index'
+import './topics/matrix-tree/index'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

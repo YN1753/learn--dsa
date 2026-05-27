@@ -1,0 +1,9 @@
+{
+  "id": "matrix-tree",
+  "title": "Matrix-Tree 定理",
+  "description": "利用Kirchhoff矩阵的代数余子式计算图的生成树数量",
+  "category": "图论与线性代数",
+  "difficulty": "hard",
+  "tags": ["图论", "线性代数", "生成树", "矩阵"],
+  "order": 100
+}
