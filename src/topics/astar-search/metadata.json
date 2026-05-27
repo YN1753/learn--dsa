@@ -1,0 +1,9 @@
+{
+  "id": "astar-search",
+  "title": "A*搜索",
+  "description": "结合实际代价和启发式估计的最优路径搜索算法，游戏和机器人导航的核心",
+  "category": "搜索算法",
+  "difficulty": "advanced",
+  "tags": ["A*", "启发式", "路径规划", "游戏AI"],
+  "order": 43
+}

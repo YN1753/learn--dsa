@@ -1,0 +1,9 @@
+{
+  "id": "suffix-array",
+  "title": "后缀数组",
+  "description": "将字符串所有后缀排序后得到的索引数组，用于高效字符串查询",
+  "category": "搜索算法",
+  "difficulty": "advanced",
+  "tags": ["后缀数组", "后缀排序", "LCP", "字符串"],
+  "order": 44
+}

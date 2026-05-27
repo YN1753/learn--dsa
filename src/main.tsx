@@ -38,10 +38,15 @@ import './topics/skip-list/index'
 import './topics/bloom-filter/index'
 import './topics/floyd-warshall/index'
 import './topics/avl-tree/index'
+import './topics/red-black-tree/index'
 import './topics/string-hashing/index'
 import './topics/bellman-ford/index'
 import './topics/max-flow/index'
 import './topics/bipartite-graph/index'
+import './topics/knapsack/index'
+import './topics/lru-cache/index'
+import './topics/suffix-array/index'
+import './topics/astar-search/index'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
