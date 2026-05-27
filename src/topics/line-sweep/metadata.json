@@ -1,0 +1,9 @@
+{
+  "id": "line-sweep",
+  "title": "扫描线 (Line Sweep)",
+  "description": "通过一条扫描线从左到右(或从下到上)扫过平面，处理几何问题的算法技巧",
+  "category": "计算几何",
+  "difficulty": "intermediate",
+  "tags": ["计算几何", "扫描线", "区间合并", "事件排序"],
+  "order": 135
+}

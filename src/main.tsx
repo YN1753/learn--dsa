@@ -132,6 +132,11 @@ import './topics/meet-in-the-middle/index'
 import './topics/bfs/index'
 import './topics/dfs/index'
 import './topics/ternary-search/index'
+import './topics/binary-exponentiation/index'
+import './topics/modular-inverse/index'
+import './topics/nim/index'
+import './topics/line-sweep/index'
+import './topics/fibonacci/index'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
