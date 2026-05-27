@@ -1,0 +1,9 @@
+{
+  "id": "treap",
+  "title": "Treap (笛卡尔树)",
+  "description": "结合二叉搜索树与堆性质的随机化平衡树，期望 O(log n) 操作",
+  "category": "高级树结构",
+  "difficulty": "advanced",
+  "tags": ["随机化", "平衡树", "二叉搜索树", "堆", "旋转"],
+  "order": 51
+}

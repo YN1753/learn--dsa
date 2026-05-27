@@ -1,0 +1,9 @@
+{
+  "id": "z-algorithm",
+  "title": "Z算法",
+  "description": "利用Z数组在线性时间内完成字符串匹配的经典算法",
+  "category": "字符串算法",
+  "difficulty": "intermediate",
+  "tags": ["字符串", "模式匹配", "Z数组", "线性时间"],
+  "order": 53
+}

@@ -52,6 +52,11 @@ import './topics/binary-search-answer/index'
 import './topics/min-cost-max-flow/index'
 import './topics/aho-corasick/index'
 import './topics/splay-tree/index'
+import './topics/treap/index'
+import './topics/suffix-tree/index'
+import './topics/z-algorithm/index'
+import './topics/strongly-connected-components/index'
+import './topics/prefix-function/index'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

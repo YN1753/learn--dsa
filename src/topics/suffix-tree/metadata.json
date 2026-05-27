@@ -1,0 +1,9 @@
+{
+  "id": "suffix-tree",
+  "title": "后缀树",
+  "description": "压缩存储字符串所有后缀的高效树形结构，支持快速模式匹配与字符串统计",
+  "category": "高级字符串结构",
+  "difficulty": "advanced",
+  "tags": ["字符串", "树结构", "模式匹配", "后缀", "压缩前缀树"],
+  "order": 52
+}
