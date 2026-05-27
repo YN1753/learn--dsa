@@ -2,8 +2,13 @@
   "id": "burnside-lemma",
   "title": "Burnside 引理",
   "description": "利用群论解决含对称性的等价类计数问题",
-  "category": "组合数学",
+  "category": "数论与数学",
   "difficulty": "advanced",
-  "tags": ["组合数学", "群论", "计数", "对称"],
+  "tags": [
+    "组合数学",
+    "群论",
+    "计数",
+    "对称"
+  ],
   "order": 99
 }

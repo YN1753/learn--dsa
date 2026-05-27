@@ -2,8 +2,14 @@
   "id": "ternary-search",
   "title": "三分搜索 (Ternary Search)",
   "description": "在单峰函数上寻找极值的搜索算法，每次将区间三等分",
-  "category": "搜索算法",
+  "category": "查找",
   "difficulty": "intermediate",
-  "tags": ["搜索", "三分", "极值", "单峰函数", "优化"],
+  "tags": [
+    "搜索",
+    "三分",
+    "极值",
+    "单峰函数",
+    "优化"
+  ],
   "order": 129
 }

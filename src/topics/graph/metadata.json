@@ -2,8 +2,13 @@
   "id": "graph",
   "title": "图",
   "description": "由顶点和边组成的关系结构，用于建模复杂网络",
-  "category": "树形结构",
+  "category": "图论",
   "difficulty": "intermediate",
-  "tags": ["图论", "BFS", "DFS", "邻接表"],
+  "tags": [
+    "图论",
+    "BFS",
+    "DFS",
+    "邻接表"
+  ],
   "order": 8
 }

@@ -1,235 +1,138 @@
 
-```md
+---
+
 # TASKS.md
 
-# Computer Networks Learning System — Tasks
+```md
+# DSA Interactive Learning System
+# TASKS.md
 
 ---
 
-# Global Tasks
-
-## Infrastructure
-
-- [ ] Build AppShell
-- [ ] Build Sidebar
-- [ ] Build Header
-- [ ] Build ThemeProvider
-- [ ] Build VisualizationWrapper
-- [ ] Build QuizRenderer
-
----
-
-# Topic Tasks
-
----
-
-## 01 网络分层模型
-
-### Article
-
-- [ ] Explain OSI layering
-- [ ] Explain encapsulation
-- [ ] Add comparison table
-
-### Visualization
-
-- [ ] Layer stack visualization
-- [ ] Packet encapsulation animation
-- [ ] Toggle protocol layers
-
-### Quiz
-
-- [ ] Create 5 questions
-
----
-
-## 02 数据链路层
-
-### Visualization
-
-- [ ] Frame delivery
-- [ ] MAC addressing
-- [ ] Collision domain demo
-
----
-
-## 03 IP 协议
-
-### Visualization
-
-- [ ] Packet routing
-- [ ] TTL changes
-- [ ] IP forwarding
-
----
-
-## 04 ARP 协议
-
-### Visualization
-
-- [ ] ARP request broadcast
-- [ ] ARP reply
-- [ ] Cache update
-
----
-
-## 05 DNS
-
-### Visualization
-
-- [ ] Recursive lookup
-- [ ] DNS cache
-- [ ] Root/TLD/Auth flow
-
----
-
-## 06 UDP
-
-### Visualization
-
-- [ ] Packet loss simulation
-- [ ] Out-of-order packets
-
----
-
-## 07 TCP 三次握手
-
-### Visualization
-
-- [ ] SYN
-- [ ] SYN-ACK
-- [ ] ACK
-
----
-
-## 08 TCP 可靠传输
-
-### Visualization
-
-- [ ] Sliding window
-- [ ] Seq/Ack tracking
-- [ ] Retransmission
-
----
-
-## 09 TCP 拥塞控制
-
-### Visualization
-
-- [ ] cwnd graph
-- [ ] Slow start
-- [ ] Packet loss recovery
-
----
-
-## 10 TCP 流量控制
-
-### Visualization
-
-- [ ] Receiver window
-- [ ] Sender blocking
-
----
-
-## 11 交换机
-
-### Visualization
-
-- [ ] MAC learning table
-- [ ] Broadcast forwarding
-
----
-
-## 12 VLAN
-
-### Visualization
-
-- [ ] VLAN segmentation
-- [ ] Broadcast isolation
-
----
-
-## 13 路由器
-
-### Visualization
-
-- [ ] Hop-by-hop forwarding
-- [ ] Routing table lookup
-
----
-
-## 14 RIP
-
-### Visualization
-
-- [ ] Distance vector propagation
-- [ ] Count-to-infinity problem
-
----
-
-## 15 OSPF
-
-### Visualization
-
-- [ ] Link-state flooding
-- [ ] SPF shortest path
-
----
-
-## 16 NAT
-
-### Visualization
-
-- [ ] Port translation
-- [ ] Internal/external mapping
-
----
-
-## 17 DHCP
-
-### Visualization
-
-- [ ] Discover
-- [ ] Offer
-- [ ] Request
-- [ ] ACK
-
----
-
-## 18 HTTP/HTTPS
-
-### Visualization
-
-- [ ] HTTP request lifecycle
-- [ ] TLS handshake
-
----
-
-## 19 CDN
-
-### Visualization
-
-- [ ] Edge cache selection
-- [ ] Geo routing
-
----
-
-## 20 网络安全基础
-
-### Visualization
-
-- [ ] Firewall filtering
-- [ ] MITM simulation
-- [ ] Packet inspection
-
----
-
-# Final Verification
-
-- [ ] All topics build
-- [ ] All visualizations interactive
-- [ ] All quizzes completed
-- [ ] Dark mode verified
-- [ ] Mobile responsive
-- [ ] npm run build passes
-```
+# CURRENT PRIORITY
+
+```txt
+Build a complete simulation-first DSA learning platform.
+Global Rules
+
+每完成一个 topic：
+
+必须：
+
+npm run build
+修复所有类型错误
+测试 dark mode
+测试 mobile
+commit
+TODO — Foundation
+Layout
+ Root layout
+ Sidebar collapse
+ Mobile sidebar overlay
+ Header actions
+Theme
+ Light mode
+ Dark mode
+ localStorage persistence
+Shared Components
+ VisualizationWrapper
+ QuizRenderer
+ TopicCard
+ StepController
+TODO — Visualization System
+Shared Controls
+ play/pause
+ reset
+ next/prev
+ speed selector
+Shared UI
+ state badge
+ complexity badge
+ pseudo code viewer
+ variable panel
+TODO — Data Structures
+Arrays
+ insertion animation
+ deletion animation
+ dynamic resize
+Linked List
+ pointer visualization
+ reverse animation
+ insert/delete
+Stack
+ push/pop animation
+ expression evaluation
+Queue
+ circular queue
+ deque
+Hash Table
+ collision visualization
+ rehash animation
+TODO — Trees
+BST
+ insert
+ delete
+ traversal
+AVL
+ LL/LR/RL/RR rotations
+Heap
+ heapify
+ priority queue
+Trie
+ insertion
+ prefix matching
+TODO — Graph
+BFS
+ queue state
+ visited state
+DFS
+ recursion stack
+ traversal order
+Dijkstra
+ priority queue
+ shortest path update
+MST
+ edge selection
+ cycle detection
+TODO — Algorithms
+Sorting
+ bubble sort
+ selection sort
+ insertion sort
+ merge sort
+ quick sort
+ heap sort
+Binary Search
+ lower bound
+ upper bound
+Dynamic Programming
+ knapsack
+ LIS
+ path DP
+TODO — Quiz System
+ score statistics
+ retry wrong questions
+ answer explanation panel
+TODO — Optimization
+ reduce unnecessary rerender
+ improve animation smoothness
+ improve mobile layout
+FUTURE
+Advanced Algorithms
+ segment tree
+ fenwick tree
+ network flow
+ suffix automaton
+ tarjan
+ lca
+RELEASE CHECKLIST
+
+发布前：
+
+ build passes
+ no TS errors
+ no hydration mismatch
+ mobile tested
+ dark mode verified
+ all visualizations interactive
+ all quizzes complete

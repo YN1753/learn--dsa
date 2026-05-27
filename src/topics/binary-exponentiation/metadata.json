@@ -2,8 +2,13 @@
   "id": "binary-exponentiation",
   "title": "快速幂 (Binary Exponentiation)",
   "description": "利用二进制分解在O(log n)时间内计算大数幂取模的算法",
-  "category": "数论",
+  "category": "数论与数学",
   "difficulty": "beginner",
-  "tags": ["数论", "快速幂", "模运算", "二进制"],
+  "tags": [
+    "数论",
+    "快速幂",
+    "模运算",
+    "二进制"
+  ],
   "order": 132
 }

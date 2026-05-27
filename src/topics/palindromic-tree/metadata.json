@@ -2,8 +2,14 @@
   "id": "palindromic-tree",
   "title": "回文树",
   "description": "Eertree/Palindromic Tree，O(n)在线构建回文子串自动机，支持本质不同回文子串计数与最长回文后缀查询",
-  "category": "字符串算法",
+  "category": "字符串",
   "difficulty": "advanced",
-  "tags": ["回文", "字符串", "自动机", "后缀链接", "在线算法"],
+  "tags": [
+    "回文",
+    "字符串",
+    "自动机",
+    "后缀链接",
+    "在线算法"
+  ],
   "order": 66
 }

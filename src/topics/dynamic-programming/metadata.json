@@ -2,8 +2,13 @@
   "id": "dynamic-programming",
   "title": "动态规划",
   "description": "通过将问题分解为重叠子问题来高效求解的算法思想",
-  "category": "搜索算法",
+  "category": "动态规划与算法设计",
   "difficulty": "advanced",
-  "tags": ["DP", "重叠子问题", "最优子结构", "记忆化"],
+  "tags": [
+    "DP",
+    "重叠子问题",
+    "最优子结构",
+    "记忆化"
+  ],
   "order": 15
 }

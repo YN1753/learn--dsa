@@ -2,8 +2,13 @@
   "id": "dancing-links",
   "title": "舞蹈链",
   "description": "Donald Knuth 提出的基于十字双向链表的精确覆盖问题高效求解算法",
-  "category": "高级算法",
+  "category": "动态规划与算法设计",
   "difficulty": "advanced",
-  "tags": ["算法", "精确覆盖", "回溯", "链表"],
+  "tags": [
+    "算法",
+    "精确覆盖",
+    "回溯",
+    "链表"
+  ],
   "order": 103
 }

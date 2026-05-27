@@ -2,8 +2,12 @@
   "id": "sliding-window",
   "title": "滑动窗口",
   "description": "通过维护一个动态窗口在数组/字符串上高效求解子数组问题的技巧",
-  "category": "搜索算法",
+  "category": "查找",
   "difficulty": "intermediate",
-  "tags": ["滑动窗口", "子数组", "双指针"],
+  "tags": [
+    "滑动窗口",
+    "子数组",
+    "双指针"
+  ],
   "order": 19
 }

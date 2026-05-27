@@ -2,8 +2,13 @@
   "id": "kd-tree",
   "title": "K-D树",
   "description": "k维空间的二叉搜索树，高效处理多维空间查询",
-  "category": "树结构",
+  "category": "高级数据结构",
   "difficulty": "intermediate",
-  "tags": ["数据结构", "空间索引", "最近邻", "树"],
+  "tags": [
+    "数据结构",
+    "空间索引",
+    "最近邻",
+    "树"
+  ],
   "order": 102
 }

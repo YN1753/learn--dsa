@@ -1,1 +1,14 @@
-{"id":"red-black-tree","title":"红黑树","description":"通过颜色标记和旋转保持近似平衡的二叉搜索树，Java/C++ 标准库的核心","category":"树形结构","difficulty":"advanced","tags":["红黑树","自平衡","旋转","标准库"],"order":41}
+{
+  "id": "red-black-tree",
+  "title": "红黑树",
+  "description": "通过颜色标记和旋转保持近似平衡的二叉搜索树，Java/C++ 标准库的核心",
+  "category": "树与二叉树",
+  "difficulty": "advanced",
+  "tags": [
+    "红黑树",
+    "自平衡",
+    "旋转",
+    "标准库"
+  ],
+  "order": 41
+}

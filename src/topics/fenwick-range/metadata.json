@@ -2,8 +2,13 @@
   "id": "fenwick-range",
   "title": "树状数组区间操作",
   "description": "基于差分思想的树状数组区间更新与查询技巧",
-  "category": "数据结构",
+  "category": "高级数据结构",
   "difficulty": "intermediate",
-  "tags": ["树状数组", "差分", "区间操作", "BIT"],
+  "tags": [
+    "树状数组",
+    "差分",
+    "区间操作",
+    "BIT"
+  ],
   "order": 79
 }

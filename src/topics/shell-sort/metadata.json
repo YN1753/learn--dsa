@@ -1,0 +1,9 @@
+{
+  "id": "shell-sort",
+  "title": "希尔排序",
+  "description": "基于插入排序的改进，通过递减增量序列分组排序，时间复杂度取决于增量序列",
+  "category": "排序",
+  "difficulty": "intermediate",
+  "tags": ["排序", "比较排序", "原地排序", "增量序列"],
+  "order": 53
+}

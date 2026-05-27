@@ -2,8 +2,13 @@
   "id": "amortized-analysis",
   "title": "摊还分析",
   "description": "分析一系列操作的平均代价，即使单次操作代价很高",
-  "category": "算法分析",
+  "category": "绪论与基础",
   "difficulty": "intermediate",
-  "tags": ["算法分析", "复杂度", "摊还分析", "势能法"],
+  "tags": [
+    "算法分析",
+    "复杂度",
+    "摊还分析",
+    "势能法"
+  ],
   "order": 75
 }

@@ -2,8 +2,13 @@
   "id": "eulerian-path",
   "title": "欧拉路径",
   "description": "经过图中每条边恰好一次的路径，Fleury/Hierholzer 算法",
-  "category": "树形结构",
+  "category": "图论",
   "difficulty": "intermediate",
-  "tags": ["欧拉路径", "欧拉回路", "Fleury", "Hierholzer"],
+  "tags": [
+    "欧拉路径",
+    "欧拉回路",
+    "Fleury",
+    "Hierholzer"
+  ],
   "order": 46
 }

@@ -2,8 +2,13 @@
   "id": "suffix-automaton",
   "title": "后缀自动机",
   "description": "线性空间的有向无环图，接受字符串所有后缀，支持丰富的子串查询操作",
-  "category": "高级字符串结构",
+  "category": "字符串",
   "difficulty": "hard",
-  "tags": ["字符串", "自动机", "后缀", "数据结构"],
+  "tags": [
+    "字符串",
+    "自动机",
+    "后缀",
+    "数据结构"
+  ],
   "order": 101
 }

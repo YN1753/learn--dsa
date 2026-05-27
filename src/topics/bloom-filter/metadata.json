@@ -2,8 +2,13 @@
   "id": "bloom-filter",
   "title": "布隆过滤器",
   "description": "以极小空间判断元素是否存在的概率性数据结构，可能误判但绝不漏判",
-  "category": "基础线性结构",
+  "category": "高级数据结构",
   "difficulty": "intermediate",
-  "tags": ["布隆过滤器", "概率性", "哈希", "误判"],
+  "tags": [
+    "布隆过滤器",
+    "概率性",
+    "哈希",
+    "误判"
+  ],
   "order": 33
 }

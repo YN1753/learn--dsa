@@ -2,8 +2,13 @@
   "id": "min25-sieve",
   "title": "Min-25筛",
   "description": "计算积性函数前缀和的高效筛法，时间复杂度O(n^(3/4)/log n)",
-  "category": "数论算法",
+  "category": "数论与数学",
   "difficulty": "hard",
-  "tags": ["数论", "筛法", "积性函数", "算法"],
+  "tags": [
+    "数论",
+    "筛法",
+    "积性函数",
+    "算法"
+  ],
   "order": 112
 }

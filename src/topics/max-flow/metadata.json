@@ -2,8 +2,13 @@
   "id": "max-flow",
   "title": "最大流",
   "description": "在容量网络中求解源点到汇点最大流量的 Ford-Fulkerson 算法",
-  "category": "树形结构",
+  "category": "图论",
   "difficulty": "advanced",
-  "tags": ["网络流", "Ford-Fulkerson", "增广路径", "Edmonds-Karp"],
+  "tags": [
+    "网络流",
+    "Ford-Fulkerson",
+    "增广路径",
+    "Edmonds-Karp"
+  ],
   "order": 39
 }

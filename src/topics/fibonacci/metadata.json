@@ -2,8 +2,14 @@
   "id": "fibonacci",
   "title": "斐波那契数列 (Fibonacci Sequence)",
   "description": "经典的数列问题，涵盖递推、矩阵快速幂、通项公式等多种求解方法",
-  "category": "数学",
+  "category": "数论与数学",
   "difficulty": "beginner",
-  "tags": ["数学", "递推", "矩阵快速幂", "黄金分割", "动态规划"],
+  "tags": [
+    "数学",
+    "递推",
+    "矩阵快速幂",
+    "黄金分割",
+    "动态规划"
+  ],
   "order": 136
 }

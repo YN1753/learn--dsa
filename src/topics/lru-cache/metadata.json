@@ -2,8 +2,14 @@
   "id": "lru-cache",
   "title": "LRU缓存",
   "description": "基于哈希表+双向链表实现的最近最少使用淘汰策略缓存",
-  "category": "基础线性结构",
+  "category": "高级数据结构",
   "difficulty": "intermediate",
-  "tags": ["LRU", "缓存", "哈希表", "双向链表", "设计题"],
+  "tags": [
+    "LRU",
+    "缓存",
+    "哈希表",
+    "双向链表",
+    "设计题"
+  ],
   "order": 42
 }

@@ -2,8 +2,13 @@
   "id": "sparse-table",
   "title": "稀疏表 (ST表)",
   "description": "基于倍增思想的静态区间查询结构，O(n log n)预处理，O(1)查询RMQ",
-  "category": "数据结构",
+  "category": "高级数据结构",
   "difficulty": "intermediate",
-  "tags": ["倍增", "RMQ", "区间查询", "静态结构"],
+  "tags": [
+    "倍增",
+    "RMQ",
+    "区间查询",
+    "静态结构"
+  ],
   "order": 76
 }

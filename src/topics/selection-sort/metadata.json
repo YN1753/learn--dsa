@@ -1,0 +1,9 @@
+{
+  "id": "selection-sort",
+  "title": "选择排序",
+  "description": "每轮从未排序部分选择最小元素放到已排序末尾，时间复杂度O(n²)",
+  "category": "排序",
+  "difficulty": "beginner",
+  "tags": ["排序", "比较排序", "原地排序"],
+  "order": 51
+}

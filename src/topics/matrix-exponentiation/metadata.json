@@ -2,8 +2,13 @@
   "id": "matrix-exponentiation",
   "title": "矩阵快速幂",
   "description": "利用矩阵幂运算加速线性递推，将 O(n) 降至 O(k³ log n)",
-  "category": "算法设计",
+  "category": "数论与数学",
   "difficulty": "intermediate",
-  "tags": ["矩阵", "快速幂", "线性递推", "斐波那契"],
+  "tags": [
+    "矩阵",
+    "快速幂",
+    "线性递推",
+    "斐波那契"
+  ],
   "order": 80
 }

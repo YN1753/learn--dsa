@@ -2,8 +2,13 @@
   "id": "dominator-tree",
   "title": "支配树",
   "description": "基于支配关系构建的树结构，用于控制流分析、编译器优化和关键节点识别",
-  "category": "图论算法",
+  "category": "图论",
   "difficulty": "advanced",
-  "tags": ["图论", "树", "控制流", "编译器"],
+  "tags": [
+    "图论",
+    "树",
+    "控制流",
+    "编译器"
+  ],
   "order": 109
 }

@@ -2,8 +2,14 @@
   "id": "pollard-rho",
   "title": "Pollard Rho因数分解",
   "description": "基于生日悖论和Floyd判圈的概率性因数分解算法，期望时间复杂度O(n^{1/4})",
-  "category": "数论",
+  "category": "数论与数学",
   "difficulty": "advanced",
-  "tags": ["数论", "因数分解", "概率算法", "Floyd判圈", "生日悖论"],
+  "tags": [
+    "数论",
+    "因数分解",
+    "概率算法",
+    "Floyd判圈",
+    "生日悖论"
+  ],
   "order": 81
 }

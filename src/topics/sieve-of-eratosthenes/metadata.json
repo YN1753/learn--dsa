@@ -2,8 +2,13 @@
   "id": "sieve-of-eratosthenes",
   "title": "埃氏筛",
   "description": "高效筛选质数的经典算法，时间复杂度 O(n log log n)",
-  "category": "数论",
+  "category": "数论与数学",
   "difficulty": "intermediate",
-  "tags": ["数论", "质数", "筛选算法", "素数"],
+  "tags": [
+    "数论",
+    "质数",
+    "筛选算法",
+    "素数"
+  ],
   "order": 63
 }

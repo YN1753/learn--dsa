@@ -2,8 +2,13 @@
   "id": "berlekamp-massey",
   "title": "Berlekamp-Massey算法",
   "description": "从序列前若干项求出最短线性递推式的经典算法",
-  "category": "高级算法",
+  "category": "数论与数学",
   "difficulty": "hard",
-  "tags": ["线性代数", "递推", "多项式", "算法"],
+  "tags": [
+    "线性代数",
+    "递推",
+    "多项式",
+    "算法"
+  ],
   "order": 110
 }

@@ -2,8 +2,12 @@
   "id": "heap",
   "title": "堆",
   "description": "基于完全二叉树的优先队列实现，支持 O(log n) 插入和 O(1) 取最值",
-  "category": "树形结构",
+  "category": "树与二叉树",
   "difficulty": "intermediate",
-  "tags": ["优先队列", "完全二叉树", "堆排序"],
+  "tags": [
+    "优先队列",
+    "完全二叉树",
+    "堆排序"
+  ],
   "order": 7
 }

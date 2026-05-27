@@ -2,8 +2,14 @@
   "id": "modular-inverse",
   "title": "模逆元 (Modular Inverse)",
   "description": "在模意义下的乘法逆元，使用扩展欧几里得或费马小定理求解",
-  "category": "数论",
+  "category": "数论与数学",
   "difficulty": "intermediate",
-  "tags": ["数论", "模运算", "逆元", "扩展欧几里得", "费马小定理"],
+  "tags": [
+    "数论",
+    "模运算",
+    "逆元",
+    "扩展欧几里得",
+    "费马小定理"
+  ],
   "order": 133
 }

@@ -2,8 +2,13 @@
   "id": "sprague-grundy",
   "title": "Sprague-Grundy 定理",
   "description": "公平组合游戏的通用解法，通过SG函数和异或运算分析博弈胜负",
-  "category": "博弈论",
+  "category": "数论与数学",
   "difficulty": "advanced",
-  "tags": ["博弈论", "游戏", "组合", "SG函数"],
+  "tags": [
+    "博弈论",
+    "游戏",
+    "组合",
+    "SG函数"
+  ],
   "order": 97
 }

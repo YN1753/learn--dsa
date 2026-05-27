@@ -2,8 +2,13 @@
   "id": "generating-functions",
   "title": "生成函数",
   "description": "将序列编码为多项式系数，用代数运算解决组合计数问题的统一框架",
-  "category": "组合数学",
+  "category": "数论与数学",
   "difficulty": "advanced",
-  "tags": ["组合数学", "多项式", "计数", "生成函数"],
+  "tags": [
+    "组合数学",
+    "多项式",
+    "计数",
+    "生成函数"
+  ],
   "order": 104
 }

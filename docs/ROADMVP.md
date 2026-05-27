@@ -1,8 +1,11 @@
 
-````md
+---
+
 # ROADMAP.md
 
-# Computer Networks Learning System — Roadmap
+```md
+# DSA Interactive Learning System
+# ROADMAP.md
 
 ---
 
@@ -10,215 +13,168 @@
 
 目标：
 
-建立整个网络学习平台基础设施。
+搭建通用学习框架。
 
 ## Tasks
 
-- [ ] Theme system
-- [ ] Sidebar
+- [ ] ThemeProvider
 - [ ] AppShell
+- [ ] Sidebar
+- [ ] Header
 - [ ] VisualizationWrapper
 - [ ] QuizRenderer
 - [ ] Topic routing system
+- [ ] Dark mode
+- [ ] Responsive layout
 
 ---
 
-# Phase 2 — Core Network Fundamentals
+# Phase 2 — Basic Data Structures
 
-## 01 网络分层模型
+目标：
 
-Visualization:
+完成基础线性结构。
 
-- OSI layering
-- packet encapsulation
+## Topics
 
----
+### 01-array
+- index
+- insertion
+- deletion
+- resize
 
-## 02 数据链路层
+### 02-linked-list
+- singly linked list
+- doubly linked list
+- reverse
 
-Visualization:
+### 03-stack
+- push/pop
+- expression evaluation
 
-- frame transfer
-- MAC addressing
+### 04-queue
+- circular queue
+- deque
 
----
-
-## 03 IP 协议
-
-Visualization:
-
-- packet routing
-- TTL decrement
-
----
-
-## 04 ARP 协议
-
-Visualization:
-
-- ARP broadcast
-- ARP cache
+### 05-hash-table
+- collision
+- chaining
+- rehash
 
 ---
 
-## 05 DNS
+# Phase 3 — Trees
 
-Visualization:
+## Topics
 
-- recursive resolution
+### 06-binary-tree
+- traversal
+- recursive structure
 
----
+### 07-bst
+- insertion
+- deletion
+- search
 
-# Phase 3 — Transport Layer
+### 08-heap
+- heapify
+- priority queue
 
-## 06 UDP
+### 09-avl
+- rotations
 
-Visualization:
+### 10-red-black-tree
+- recolor
+- rotations
 
-- unreliable delivery
-
----
-
-## 07 TCP 连接建立
-
-Visualization:
-
-- 三次握手
-
----
-
-## 08 TCP 可靠传输
-
-Visualization:
-
-- seq/ack
-- retransmission
+### 11-trie
+- prefix search
 
 ---
 
-## 09 TCP 拥塞控制
+# Phase 4 — Graph Algorithms
 
-Visualization:
+## Topics
 
-- cwnd
-- slow start
+### 12-graph-basics
+- adjacency matrix/list
 
----
+### 13-bfs
+- queue traversal
 
-## 10 TCP 流量控制
+### 14-dfs
+- recursion/stack
 
-Visualization:
+### 15-dijkstra
+- shortest path
 
-- sliding window
+### 16-mst
+- prim
+- kruskal
 
----
-
-# Phase 4 — Routing & Switching
-
-## 11 交换机
-
-Visualization:
-
-- MAC table learning
+### 17-topological-sort
+- DAG processing
 
 ---
 
-## 12 VLAN
+# Phase 5 — Algorithms
 
-Visualization:
+## Topics
 
-- broadcast domains
+### 18-sorting
+- bubble
+- selection
+- insertion
+- merge
+- quick
+- heap
 
----
+### 19-binary-search
+- lower bound
+- upper bound
 
-## 13 路由器
-
-Visualization:
-
-- hop forwarding
-
----
-
-## 14 RIP
-
-Visualization:
-
-- distance vector updates
-
----
-
-## 15 OSPF
-
-Visualization:
-
-- shortest path graph
+### 20-dynamic-programming
+- knapsack
+- LIS
+- state transition
 
 ---
 
-# Phase 5 — Advanced Networking
+# Phase 6 — Advanced Algorithms
 
-## 16 NAT
+## Topics
 
-Visualization:
-
-- address translation
-
----
-
-## 17 DHCP
-
-Visualization:
-
-- DORA process
+- segment tree
+- fenwick tree
+- union find
+- kmp
+- ac automaton
+- suffix array
+- network flow
 
 ---
 
-## 18 HTTP/HTTPS
+# Phase 7 — Polish
 
-Visualization:
+## Goals
 
-- request lifecycle
-- TLS handshake
-
----
-
-## 19 CDN
-
-Visualization:
-
-- cache hierarchy
+- animation refinement
+- mobile optimization
+- better quizzes
+- accessibility
+- performance optimization
 
 ---
 
-## 20 网络安全基础
+# Long-Term Vision
 
-Visualization:
+最终目标：
 
-- firewall filtering
-- MITM demo
+构建：
 
----
-
-# Phase 6 — Polish
-
-- [ ] Improve responsiveness
-- [ ] Add dark mode polish
-- [ ] Improve mobile visualizations
-- [ ] Optimize animation performance
-- [ ] Refine quizzes
-
----
-
-# Final Goal
-
-用户能够：
-
-- 亲手操作协议
-- 观察 packet 流动
-- 理解状态变化
-- 看懂网络机制
+# “真正能看懂算法”的交互式学习平台
 
 而不是：
 
 ```txt
-死记协议定义
+题解网站

@@ -1,0 +1,9 @@
+{
+  "id": "insertion-sort",
+  "title": "插入排序",
+  "description": "将元素逐个插入已排序部分的正确位置，对近乎有序数据效率极高",
+  "category": "排序",
+  "difficulty": "beginner",
+  "tags": ["排序", "比较排序", "原地排序", "稳定排序"],
+  "order": 52
+}

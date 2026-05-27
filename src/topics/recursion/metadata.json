@@ -2,8 +2,13 @@
   "id": "recursion",
   "title": "递归",
   "description": "函数调用自身的编程技巧，是分治、回溯、动态规划的基础",
-  "category": "基础线性结构",
+  "category": "绪论与基础",
   "difficulty": "intermediate",
-  "tags": ["递归", "分治", "回溯", "调用栈"],
+  "tags": [
+    "递归",
+    "分治",
+    "回溯",
+    "调用栈"
+  ],
   "order": 9
 }

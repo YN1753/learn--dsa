@@ -2,8 +2,12 @@
   "id": "hash-table",
   "title": "哈希表",
   "description": "通过哈希函数实现 O(1) 平均查找的键值对结构",
-  "category": "基础线性结构",
+  "category": "线性结构",
   "difficulty": "intermediate",
-  "tags": ["哈希", "键值对", "O(1)查找"],
+  "tags": [
+    "哈希",
+    "键值对",
+    "O(1)查找"
+  ],
   "order": 6
 }

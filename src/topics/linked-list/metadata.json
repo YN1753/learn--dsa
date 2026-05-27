@@ -2,8 +2,12 @@
   "id": "linked-list",
   "title": "链表",
   "description": "通过指针连接的动态线性结构，插入删除高效",
-  "category": "基础线性结构",
+  "category": "线性结构",
   "difficulty": "beginner",
-  "tags": ["线性结构", "动态分配", "指针"],
+  "tags": [
+    "线性结构",
+    "动态分配",
+    "指针"
+  ],
   "order": 2
 }

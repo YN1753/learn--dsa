@@ -2,8 +2,13 @@
   "id": "virtual-tree",
   "title": "虚树",
   "description": "包含关键节点及其LCA的压缩树结构，高效处理树上多组询问",
-  "category": "高级树结构",
+  "category": "高级数据结构",
   "difficulty": "hard",
-  "tags": ["数据结构", "树", "LCA", "优化"],
+  "tags": [
+    "数据结构",
+    "树",
+    "LCA",
+    "优化"
+  ],
   "order": 115
 }

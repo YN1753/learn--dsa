@@ -1,0 +1,9 @@
+{
+  "id": "counting-sort",
+  "title": "计数排序",
+  "description": "非比较排序，统计每个值出现次数，时间复杂度O(n+k)，适用于值域较小的情况",
+  "category": "排序",
+  "difficulty": "beginner",
+  "tags": ["排序", "非比较排序", "稳定排序", "线性时间"],
+  "order": 54
+}

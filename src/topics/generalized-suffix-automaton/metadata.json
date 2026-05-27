@@ -2,8 +2,13 @@
   "id": "generalized-suffix-automaton",
   "title": "广义后缀自动机",
   "description": "多个字符串的后缀自动机，统一接受所有字符串的所有子串，支持多串子串查询与公共子串分析",
-  "category": "高级字符串结构",
+  "category": "字符串",
   "difficulty": "hard",
-  "tags": ["字符串", "自动机", "多串", "后缀"],
+  "tags": [
+    "字符串",
+    "自动机",
+    "多串",
+    "后缀"
+  ],
   "order": 125
 }

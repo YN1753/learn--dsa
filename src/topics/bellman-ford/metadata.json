@@ -2,8 +2,13 @@
   "id": "bellman-ford",
   "title": "Bellman-Ford算法",
   "description": "支持负权边的单源最短路径算法，可检测负权环",
-  "category": "树形结构",
+  "category": "图论",
   "difficulty": "advanced",
-  "tags": ["最短路径", "负权边", "负权环", "松弛"],
+  "tags": [
+    "最短路径",
+    "负权边",
+    "负权环",
+    "松弛"
+  ],
   "order": 37
 }

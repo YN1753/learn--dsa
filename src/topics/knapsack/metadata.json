@@ -2,8 +2,13 @@
   "id": "knapsack",
   "title": "背包问题",
   "description": "在容量限制下选择物品使价值最大的经典优化问题，动态规划的核心范例",
-  "category": "搜索算法",
+  "category": "动态规划与算法设计",
   "difficulty": "intermediate",
-  "tags": ["背包", "0/1背包", "完全背包", "动态规划"],
+  "tags": [
+    "背包",
+    "0/1背包",
+    "完全背包",
+    "动态规划"
+  ],
   "order": 45
 }

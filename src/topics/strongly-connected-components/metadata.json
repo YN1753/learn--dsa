@@ -2,8 +2,15 @@
   "id": "strongly-connected-components",
   "title": "强连通分量",
   "description": "有向图中互相可达的最大顶点子集，图论核心算法之一",
-  "category": "图论算法",
+  "category": "图论",
   "difficulty": "advanced",
-  "tags": ["图论", "有向图", "DFS", "Tarjan", "Kosaraju", "SCC"],
+  "tags": [
+    "图论",
+    "有向图",
+    "DFS",
+    "Tarjan",
+    "Kosaraju",
+    "SCC"
+  ],
   "order": 54
 }

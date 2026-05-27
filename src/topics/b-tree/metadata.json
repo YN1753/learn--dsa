@@ -2,8 +2,13 @@
   "id": "b-tree",
   "title": "B树",
   "description": "多路平衡搜索树，数据库和文件系统索引的核心数据结构",
-  "category": "树形结构",
+  "category": "树与二叉树",
   "difficulty": "advanced",
-  "tags": ["B树", "数据库索引", "多路平衡", "磁盘IO"],
+  "tags": [
+    "B树",
+    "数据库索引",
+    "多路平衡",
+    "磁盘IO"
+  ],
   "order": 31
 }

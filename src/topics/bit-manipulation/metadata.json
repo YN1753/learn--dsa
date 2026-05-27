@@ -2,8 +2,13 @@
   "id": "bit-manipulation",
   "title": "位运算",
   "description": "直接操作二进制位的技巧，用于高效解决集合、掩码、计数等问题",
-  "category": "搜索算法",
+  "category": "绪论与基础",
   "difficulty": "intermediate",
-  "tags": ["位运算", "二进制", "掩码", "集合"],
+  "tags": [
+    "位运算",
+    "二进制",
+    "掩码",
+    "集合"
+  ],
   "order": 29
 }

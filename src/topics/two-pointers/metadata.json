@@ -2,8 +2,12 @@
   "id": "two-pointers",
   "title": "双指针",
   "description": "使用两个指针在数组或链表上协同移动以高效解决问题的技巧",
-  "category": "搜索算法",
+  "category": "查找",
   "difficulty": "intermediate",
-  "tags": ["双指针", "对撞指针", "快慢指针"],
+  "tags": [
+    "双指针",
+    "对撞指针",
+    "快慢指针"
+  ],
   "order": 18
 }

@@ -2,8 +2,13 @@
   "id": "hopcroft-karp",
   "title": "Hopcroft-Karp 最大匹配算法",
   "description": "基于BFS分层和DFS增广的高效二分图最大匹配算法，时间复杂度O(E√V)",
-  "category": "树形结构",
+  "category": "图论",
   "difficulty": "advanced",
-  "tags": ["图论", "二分图", "匹配", "算法"],
+  "tags": [
+    "图论",
+    "二分图",
+    "匹配",
+    "算法"
+  ],
   "order": 96
 }

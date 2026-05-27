@@ -2,8 +2,13 @@
   "id": "iterative-deepening",
   "title": "迭代加深搜索",
   "description": "结合DFS空间优势和BFS最优性的搜索策略，逐步增加搜索深度",
-  "category": "搜索算法",
+  "category": "查找",
   "difficulty": "intermediate",
-  "tags": ["搜索", "图算法", "树搜索", "IDA*"],
+  "tags": [
+    "搜索",
+    "图算法",
+    "树搜索",
+    "IDA*"
+  ],
   "order": 94
 }

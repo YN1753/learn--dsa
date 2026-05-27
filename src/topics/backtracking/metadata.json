@@ -2,8 +2,13 @@
   "id": "backtracking",
   "title": "回溯",
   "description": "通过试探和撤销来系统搜索所有可能解的算法框架",
-  "category": "搜索算法",
+  "category": "动态规划与算法设计",
   "difficulty": "advanced",
-  "tags": ["回溯", "搜索", "剪枝", "N皇后"],
+  "tags": [
+    "回溯",
+    "搜索",
+    "剪枝",
+    "N皇后"
+  ],
   "order": 20
 }

@@ -2,8 +2,14 @@
   "id": "mst",
   "title": "最小生成树",
   "description": "在加权连通图中找到总权重最小的生成树的 Kruskal 和 Prim 算法",
-  "category": "树形结构",
+  "category": "图论",
   "difficulty": "advanced",
-  "tags": ["MST", "Kruskal", "Prim", "贪心", "并查集"],
+  "tags": [
+    "MST",
+    "Kruskal",
+    "Prim",
+    "贪心",
+    "并查集"
+  ],
   "order": 28
 }

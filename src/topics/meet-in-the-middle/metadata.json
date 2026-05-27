@@ -2,8 +2,14 @@
   "id": "meet-in-the-middle",
   "title": "折半搜索 (Meet in the Middle)",
   "description": "将搜索空间分成两半分别求解再合并，将O(2^n)降为O(2^(n/2))",
-  "category": "搜索算法",
+  "category": "动态规划与算法设计",
   "difficulty": "intermediate",
-  "tags": ["搜索", "折半", "分治", "指数级优化", "子集和"],
+  "tags": [
+    "搜索",
+    "折半",
+    "分治",
+    "指数级优化",
+    "子集和"
+  ],
   "order": 130
 }

@@ -2,8 +2,13 @@
   "id": "non-comparison-sort",
   "title": "非比较排序",
   "description": "不依赖元素比较的排序算法，突破 O(n log n) 下界达到 O(n+k)",
-  "category": "排序算法",
+  "category": "排序",
   "difficulty": "intermediate",
-  "tags": ["计数排序", "基数排序", "桶排序", "O(n)"],
+  "tags": [
+    "计数排序",
+    "基数排序",
+    "桶排序",
+    "O(n)"
+  ],
   "order": 34
 }

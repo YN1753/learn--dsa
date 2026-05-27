@@ -2,8 +2,15 @@
   "id": "bridges-and-articulation",
   "title": "桥与割点",
   "description": "图中关键边（桥）和关键顶点（割点）的识别，基于Tarjan算法的DFS分析",
-  "category": "图论算法",
+  "category": "图论",
   "difficulty": "intermediate",
-  "tags": ["图论", "DFS", "Tarjan算法", "连通性", "关键边", "关键点"],
+  "tags": [
+    "图论",
+    "DFS",
+    "Tarjan算法",
+    "连通性",
+    "关键边",
+    "关键点"
+  ],
   "order": 61
 }

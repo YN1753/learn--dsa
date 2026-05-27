@@ -2,8 +2,13 @@
   "id": "topological-sort",
   "title": "拓扑排序",
   "description": "对有向无环图(DAG)进行线性排序，使所有边从前指向后",
-  "category": "树形结构",
+  "category": "图论",
   "difficulty": "intermediate",
-  "tags": ["DAG", "有向图", "依赖排序", "Kahn"],
+  "tags": [
+    "DAG",
+    "有向图",
+    "依赖排序",
+    "Kahn"
+  ],
   "order": 17
 }

@@ -2,8 +2,13 @@
   "id": "bsgs",
   "title": "BSGS算法",
   "description": "Baby-Step Giant-Step算法高效求解离散对数问题",
-  "category": "数论算法",
+  "category": "数论与数学",
   "difficulty": "hard",
-  "tags": ["数论", "离散对数", "哈希", "算法"],
+  "tags": [
+    "数论",
+    "离散对数",
+    "哈希",
+    "算法"
+  ],
   "order": 106
 }

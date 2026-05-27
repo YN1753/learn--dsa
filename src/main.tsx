@@ -144,6 +144,11 @@ import './topics/bitmask-dp/index'
 import './topics/interval-scheduling/index'
 import './topics/tree-dp/index'
 import './topics/probability-dp/index'
+import './topics/selection-sort/index'
+import './topics/insertion-sort/index'
+import './topics/shell-sort/index'
+import './topics/counting-sort/index'
+import './topics/radix-sort/index'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

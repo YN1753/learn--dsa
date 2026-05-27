@@ -2,8 +2,14 @@
   "id": "prefix-function",
   "title": "前缀函数",
   "description": "计算字符串每个前缀的最长相等前后缀长度，KMP算法的核心基础",
-  "category": "字符串算法",
+  "category": "字符串",
   "difficulty": "intermediate",
-  "tags": ["字符串", "KMP", "前缀函数", "模式匹配", "线性算法"],
+  "tags": [
+    "字符串",
+    "KMP",
+    "前缀函数",
+    "模式匹配",
+    "线性算法"
+  ],
   "order": 55
 }
