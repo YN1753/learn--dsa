@@ -1,0 +1,9 @@
+{
+  "id": "floyd-warshall",
+  "title": "Floyd最短路径",
+  "description": "求解所有顶点对之间最短路径的动态规划算法，O(V³)",
+  "category": "树形结构",
+  "difficulty": "advanced",
+  "tags": ["最短路径", "动态规划", "全源", "O(V³)"],
+  "order": 35
+}

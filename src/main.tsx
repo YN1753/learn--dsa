@@ -32,6 +32,11 @@ import './topics/segment-tree/index'
 import './topics/fenwick-tree/index'
 import './topics/mst/index'
 import './topics/memoization/index'
+import './topics/b-tree/index'
+import './topics/non-comparison-sort/index'
+import './topics/skip-list/index'
+import './topics/bloom-filter/index'
+import './topics/floyd-warshall/index'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

@@ -1,0 +1,9 @@
+{
+  "id": "skip-list",
+  "title": "跳表",
+  "description": "通过多层索引实现 O(log n) 查找的概率性有序数据结构",
+  "category": "基础线性结构",
+  "difficulty": "intermediate",
+  "tags": ["跳表", "概率性", "Redis", "有序"],
+  "order": 32
+}
