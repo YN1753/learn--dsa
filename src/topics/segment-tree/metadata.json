@@ -1,0 +1,9 @@
+{
+  "id": "segment-tree",
+  "title": "线段树",
+  "description": "支持 O(log n) 区间查询和修改的二叉树结构",
+  "category": "树形结构",
+  "difficulty": "advanced",
+  "tags": ["线段树", "区间查询", "区间修改", "分治"],
+  "order": 26
+}

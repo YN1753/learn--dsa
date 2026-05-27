@@ -1,0 +1,9 @@
+{
+  "id": "memoization",
+  "title": "记忆化搜索",
+  "description": "通过缓存递归结果避免重复计算，将指数时间优化为多项式时间",
+  "category": "搜索算法",
+  "difficulty": "intermediate",
+  "tags": ["记忆化", "缓存", "递归优化", "DP"],
+  "order": 30
+}

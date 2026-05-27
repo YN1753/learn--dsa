@@ -27,6 +27,11 @@ import './topics/difference-array/index'
 import './topics/monotonic-stack/index'
 import './topics/monotonic-queue/index'
 import './topics/trie/index'
+import './topics/bit-manipulation/index'
+import './topics/segment-tree/index'
+import './topics/fenwick-tree/index'
+import './topics/mst/index'
+import './topics/memoization/index'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

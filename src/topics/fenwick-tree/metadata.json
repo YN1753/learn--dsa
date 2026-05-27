@@ -1,0 +1,9 @@
+{
+  "id": "fenwick-tree",
+  "title": "树状数组",
+  "description": "通过 lowbit 运算实现 O(log n) 前缀和查询与单点更新的紧凑结构",
+  "category": "树形结构",
+  "difficulty": "advanced",
+  "tags": ["树状数组", "lowbit", "前缀和", "Fenwick"],
+  "order": 27
+}
