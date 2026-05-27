@@ -1,0 +1,9 @@
+{
+  "id": "shortest-path",
+  "title": "最短路径",
+  "description": "在加权图中找到两点间最短路径的 Dijkstra 算法",
+  "category": "树形结构",
+  "difficulty": "advanced",
+  "tags": ["图论", "Dijkstra", "贪心", "优先队列"],
+  "order": 14
+}

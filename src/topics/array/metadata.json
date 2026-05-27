@@ -1,0 +1,9 @@
+{
+  "id": "array",
+  "title": "数组",
+  "description": "最基础的线性数据结构，连续内存存储，支持随机访问",
+  "category": "基础线性结构",
+  "difficulty": "beginner",
+  "tags": ["线性结构", "随机访问", "连续存储"],
+  "order": 1
+}

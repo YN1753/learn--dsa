@@ -1,0 +1,9 @@
+{
+  "id": "binary-search",
+  "title": "二分查找",
+  "description": "在有序数组中以 O(log n) 时间查找目标值的经典算法",
+  "category": "搜索算法",
+  "difficulty": "beginner",
+  "tags": ["查找", "分治", "O(logn)"],
+  "order": 11
+}

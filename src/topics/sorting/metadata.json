@@ -1,0 +1,9 @@
+{
+  "id": "sorting",
+  "title": "排序算法",
+  "description": "将无序数据排列有序的核心算法，包含冒泡、选择、插入、归并、快排等",
+  "category": "排序算法",
+  "difficulty": "intermediate",
+  "tags": ["排序", "比较排序", "分治", "O(nlogn)"],
+  "order": 10
+}

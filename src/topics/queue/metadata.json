@@ -1,0 +1,9 @@
+{
+  "id": "queue",
+  "title": "队列",
+  "description": "先进先出(FIFO)的线性结构，任务调度和缓冲区的核心",
+  "category": "基础线性结构",
+  "difficulty": "beginner",
+  "tags": ["FIFO", "线性结构", "BFS"],
+  "order": 4
+}

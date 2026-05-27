@@ -1,0 +1,57 @@
+[
+  {
+    "question": "递归函数中，基本情况（base case）的主要作用是什么？",
+    "options": [
+      "提高程序运行速度",
+      "终止递归，防止无限调用",
+      "减少内存占用",
+      "让代码更简洁"
+    ],
+    "answer": 1,
+    "explanation": "基本情况是递归的终止条件。没有正确的基本情况，递归函数会无限调用自身，最终导致栈溢出（Stack Overflow）。基本情况返回一个不再需要递归的确定值，是递归正确性的根本保证。"
+  },
+  {
+    "question": "当递归函数 factorial(5) 被调用时，调用栈中同时最多会有多少个栈帧？",
+    "options": [
+      "4 个",
+      "5 个",
+      "6 个",
+      "7 个"
+    ],
+    "answer": 1,
+    "explanation": "factorial(5) 调用 factorial(4)，依次调用 factorial(3)、factorial(2)、factorial(1)。factorial(1) 命中基本情况（n <= 1 return 1）直接返回，不再继续调用。此时栈中同时存在 factorial(5)、factorial(4)、factorial(3)、factorial(2)、factorial(1) 共 5 个栈帧。"
+  },
+  {
+    "question": "什么是尾递归优化（Tail Recursion Optimization）？",
+    "options": [
+      "将递归放在函数的中间位置",
+      "递归调用是函数的最后一个操作，编译器可以复用当前栈帧",
+      "在递归之前先执行所有计算",
+      "使用循环代替递归"
+    ],
+    "answer": 1,
+    "explanation": "尾递归是指递归调用是函数中最后执行的操作，没有其他计算需要在递归返回后进行。支持尾调用优化（TCO）的编译器/解释器可以复用当前栈帧，将递归转化为循环，避免栈溢出。例如：factorial(n, acc=1) 中 if n<=1 return acc else return factorial(n-1, n*acc) 是尾递归形式。"
+  },
+  {
+    "question": "斐波那契数列的朴素递归实现 fib(n) 的时间复杂度是多少？为什么？",
+    "options": [
+      "O(n)，因为递归 n 层",
+      "O(n log n)，因为每层分两次",
+      "O(2^n)，因为存在大量重复计算",
+      "O(n!)，因为是阶乘级增长"
+    ],
+    "answer": 2,
+    "explanation": "朴素递归的 fib(n) 会重复计算相同的子问题。例如 fib(5) 需要计算 fib(4) 和 fib(3)，而 fib(4) 也要计算 fib(3)——fib(3) 被计算了两次。随着 n 增大，重复计算呈指数级增长，时间复杂度为 O(2^n)。通过记忆化（memoization）可以优化到 O(n)。"
+  },
+  {
+    "question": "以下迭代代码用 while 循环计算阶乘。将其转换为递归版本时，最关键的是什么？\n\n```\nlet result = 1\nfor (let i = n; i > 0; i--)\n  result *= i\n```",
+    "options": [
+      "将循环变量 i 改为全局变量",
+      "确定基本情况（i <= 1 时返回）和递归关系（n * f(n-1)）",
+      "使用 for 循环包装递归函数",
+      "将 result 变量改为数组"
+    ],
+    "answer": 1,
+    "explanation": "将迭代转换为递归的关键是：1）确定基本情况——循环终止条件对应递归的 base case（i <= 1 时返回 1）；2）确定递归关系——循环体的操作对应递归表达式（result *= i 对应 n * factorial(n-1)）。递归版本：function factorial(n) { if (n <= 1) return 1; return n * factorial(n - 1); }"
+  }
+]

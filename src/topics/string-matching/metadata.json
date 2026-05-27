@@ -1,0 +1,9 @@
+{
+  "id": "string-matching",
+  "title": "字符串匹配",
+  "description": "在文本中高效查找模式串的算法，包含暴力匹配和 KMP 算法",
+  "category": "搜索算法",
+  "difficulty": "intermediate",
+  "tags": ["字符串", "KMP", "模式匹配"],
+  "order": 12
+}

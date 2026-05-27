@@ -1,0 +1,9 @@
+{
+  "id": "binary-tree",
+  "title": "二叉树",
+  "description": "每个节点最多两个子节点的树形结构，搜索和排序的基石",
+  "category": "树形结构",
+  "difficulty": "intermediate",
+  "tags": ["树形结构", "递归", "遍历"],
+  "order": 5
+}
