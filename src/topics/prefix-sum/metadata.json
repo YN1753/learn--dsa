@@ -1,0 +1,9 @@
+{
+  "id": "prefix-sum",
+  "title": "前缀和",
+  "description": "通过预处理数组实现 O(1) 区间求和的技巧",
+  "category": "搜索算法",
+  "difficulty": "intermediate",
+  "tags": ["前缀和", "区间查询", "预处理"],
+  "order": 21
+}

@@ -22,6 +22,11 @@ import './topics/backtracking/index'
 import './topics/topological-sort/index'
 import './topics/greedy/index'
 import './topics/two-pointers/index'
+import './topics/prefix-sum/index'
+import './topics/difference-array/index'
+import './topics/monotonic-stack/index'
+import './topics/monotonic-queue/index'
+import './topics/trie/index'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

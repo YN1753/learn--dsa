@@ -1,0 +1,9 @@
+{
+  "id": "trie",
+  "title": "字典树",
+  "description": "用于高效存储和检索字符串的树形结构，前缀匹配的核心工具",
+  "category": "树形结构",
+  "difficulty": "intermediate",
+  "tags": ["前缀树", "字符串", "自动补全", "字典"],
+  "order": 25
+}

@@ -1,0 +1,9 @@
+{
+  "id": "monotonic-queue",
+  "title": "单调队列",
+  "description": "队列内元素保持单调的双端队列，用于高效求解滑动窗口最值",
+  "category": "基础线性结构",
+  "difficulty": "advanced",
+  "tags": ["单调队列", "滑动窗口", "双端队列", "最值"],
+  "order": 24
+}

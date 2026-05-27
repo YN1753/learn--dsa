@@ -1,0 +1,9 @@
+{
+  "id": "difference-array",
+  "title": "差分数组",
+  "description": "通过差分思想将区间修改从 O(n) 优化到 O(1) 的技巧",
+  "category": "搜索算法",
+  "difficulty": "intermediate",
+  "tags": ["差分", "区间修改", "前缀和"],
+  "order": 22
+}
