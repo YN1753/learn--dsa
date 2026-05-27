@@ -1,0 +1,9 @@
+{
+  "id": "interval-scheduling",
+  "title": "区间调度 (Interval Scheduling)",
+  "description": "经典贪心问题：选择最多不重叠区间，按结束时间排序贪心选择",
+  "category": "贪心算法",
+  "difficulty": "intermediate",
+  "tags": ["贪心", "区间", "调度", "活动选择"],
+  "order": 141
+}

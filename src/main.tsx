@@ -141,6 +141,9 @@ import './topics/josephus-problem/index'
 import './topics/catalan-numbers/index'
 import './topics/digit-dp/index'
 import './topics/bitmask-dp/index'
+import './topics/interval-scheduling/index'
+import './topics/tree-dp/index'
+import './topics/probability-dp/index'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

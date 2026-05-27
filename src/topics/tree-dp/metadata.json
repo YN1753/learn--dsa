@@ -1,0 +1,9 @@
+{
+  "id": "tree-dp",
+  "title": "树形DP (Tree DP)",
+  "description": "在树结构上进行动态规划，通过DFS遍历树并在子树间传递状态",
+  "category": "动态规划",
+  "difficulty": "advanced",
+  "tags": ["动态规划", "树", "DFS", "树形DP"],
+  "order": 142
+}

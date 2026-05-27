@@ -1,0 +1,9 @@
+{
+  "id": "probability-dp",
+  "title": "概率DP (Probability DP)",
+  "description": "求解概率和期望的动态规划，状态转移涉及概率计算",
+  "category": "动态规划",
+  "difficulty": "advanced",
+  "tags": ["动态规划", "概率", "期望", "数学"],
+  "order": 143
+}
