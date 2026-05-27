@@ -1,0 +1,9 @@
+{
+  "id": "mobius-inversion",
+  "title": "莫比乌斯反演",
+  "description": "数论中最重要的反演工具，将求和问题转化为更容易计算的形式",
+  "category": "数论算法",
+  "difficulty": "hard",
+  "tags": ["数论", "反演", "积性函数", "莫比乌斯"],
+  "order": 114
+}

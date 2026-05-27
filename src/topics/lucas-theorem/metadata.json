@@ -1,0 +1,9 @@
+{
+  "id": "lucas-theorem",
+  "title": "卢卡斯定理",
+  "description": "将大组合数取模问题分解为小组合数乘积的数论定理",
+  "category": "数论",
+  "difficulty": "hard",
+  "tags": ["数论", "组合数学", "模运算", "定理"],
+  "order": 111
+}

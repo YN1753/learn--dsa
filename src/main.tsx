@@ -112,6 +112,11 @@ import './topics/eulers-theorem/index'
 import './topics/persistent-trie/index'
 import './topics/berlekamp-massey/index'
 import './topics/dominator-tree/index'
+import './topics/lucas-theorem/index'
+import './topics/min25-sieve/index'
+import './topics/fwht/index'
+import './topics/mobius-inversion/index'
+import './topics/virtual-tree/index'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

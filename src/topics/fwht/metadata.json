@@ -1,0 +1,9 @@
+{
+  "id": "fwht",
+  "title": "FWHT快速沃尔什变换",
+  "description": "处理OR/AND/XOR卷积的O(n log n)变换算法，位运算卷积的标准工具",
+  "category": "数学",
+  "difficulty": "hard",
+  "tags": ["数学", "变换", "位运算", "卷积"],
+  "order": 113
+}
