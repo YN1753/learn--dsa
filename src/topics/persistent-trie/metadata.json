@@ -1,0 +1,9 @@
+{
+  "id": "persistent-trie",
+  "title": "可持久化字典树",
+  "description": "支持历史版本查询的字典树，通过路径复制实现区间异或最大值等经典问题",
+  "category": "高级数据结构",
+  "difficulty": "hard",
+  "tags": ["数据结构", "字典树", "可持久化", "异或"],
+  "order": 108
+}

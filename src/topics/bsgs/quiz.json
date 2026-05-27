@@ -1,0 +1,52 @@
+[
+  {
+    "question": "BSGS算法求解离散对数问题 a^x ≡ b (mod p) 的时间复杂度是多少？",
+    "options": ["O(p)", "O(√p)", "O(log p)", "O(p log p)"],
+    "answer": 1,
+    "explanation": "BSGS算法通过分块思想，将暴力枚举的O(p)降低到O(√p)。令 x = im - j，其中 m = ⌈√p⌉。Baby Step预处理 a^j (0≤j<m) 存入哈希表，Giant Step枚举 i (0≤i≤m) 查找 b·(a^(-m))^i 是否在哈希表中，两步各O(√p)，总时间O(√p)。"
+  },
+  {
+    "question": "在BSGS算法中，令 x = im - j 的目的是什么？",
+    "options": [
+      "使指数变成负数方便计算",
+      "将一维搜索拆分为两个√p量级的搜索",
+      "减少模运算的次数",
+      "避免哈希冲突"
+    ],
+    "answer": 1,
+    "explanation": "令 x = im - j 的核心思想是分块。将对 x 在 [0, p) 范围内的搜索拆分为两部分：j 在 [0, m) 范围内枚举（Baby Step），i 在 [0, m] 范围内枚举（Giant Step）。这样 a^x = a^(im-j) = (a^m)^i / a^j，等式变形为 a^j · b = (a^m)^i，即可用哈希表加速匹配。"
+  },
+  {
+    "question": "当 a 和 p 不互质（即 gcd(a, p) ≠ 1）时，应该如何处理？",
+    "options": [
+      "直接报错，无解",
+      "使用扩展BSGS，不断提取公因子直到互质",
+      "改用暴力枚举",
+      "将 p 替换为 p / gcd(a, p)"
+    ],
+    "answer": 1,
+    "explanation": "当 gcd(a, p) ≠ 1 时，a 在模 p 下没有逆元，标准BSGS无法直接使用。扩展BSGS的做法是：设 d = gcd(a, p)，若 d | b 则将 a、b、p 同时除以 d 并记录提取的因子，重复直到 gcd(a, p) = 1，然后对化简后的问题使用标准BSGS。若某一步 d 不整除 b，则方程无解。"
+  },
+  {
+    "question": "BSGS算法中，Baby Step阶段的哈希表存储的是什么？",
+    "options": [
+      "存储 a^i → i 的映射，i 从 0 到 m-1",
+      "存储 b·a^i → i 的映射",
+      "存储 a^(m·i) → i 的映射",
+      "存储 i → a^i 的映射"
+    ],
+    "answer": 0,
+    "explanation": "Baby Step阶段预计算 a^j mod p（j = 0, 1, ..., m-1），并以 a^j 的值为键、j 为值存入哈希表。之后在Giant Step阶段，枚举 i 并计算 b·(a^(-m))^i mod p，若该值出现在哈希表中，则找到匹配的 j，进而得到 x = im - j。"
+  },
+  {
+    "question": "如果 b = 1（即求 a^x ≡ 1 mod p），BSGS算法应该如何处理？",
+    "options": [
+      "x 一定等于 0",
+      "x 一定等于 p-1",
+      "x = 0 是平凡解，但可能存在更小的正整数解",
+      "方程一定无解"
+    ],
+    "answer": 2,
+    "explanation": "当 b = 1 时，x = 0 是一个平凡解（因为 a^0 = 1）。但 a 在模 p 下的阶可能小于 p-1，因此可能存在更小的正整数 x 使得 a^x ≡ 1。BSGS算法本身会自然地找到最小非负整数解，包括 x = 0 的情况。实现时应注意这个边界条件。"
+  }
+]

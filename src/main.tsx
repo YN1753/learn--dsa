@@ -107,6 +107,11 @@ import './topics/kd-tree/index'
 import './topics/generating-functions/index'
 import './topics/suffix-automaton/index'
 import './topics/stirling-numbers/index'
+import './topics/bsgs/index'
+import './topics/eulers-theorem/index'
+import './topics/persistent-trie/index'
+import './topics/berlekamp-massey/index'
+import './topics/dominator-tree/index'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

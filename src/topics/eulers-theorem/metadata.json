@@ -1,0 +1,9 @@
+{
+  "id": "eulers-theorem",
+  "title": "欧拉定理",
+  "description": "若gcd(a,n)=1则a^φ(n)≡1(mod n)，模运算降幂与RSA密码学核心定理",
+  "category": "数论",
+  "difficulty": "medium",
+  "tags": ["数论", "模运算", "费马小定理", "欧拉函数"],
+  "order": 107
+}
