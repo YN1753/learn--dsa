@@ -1,0 +1,9 @@
+{
+  "id": "euler-totient",
+  "title": "欧拉函数",
+  "description": "计算与n互质的正整数个数，数论核心函数，RSA加密基石",
+  "category": "数论",
+  "difficulty": "intermediate",
+  "tags": ["数论", "欧拉函数", "积性函数", "RSA", "筛法"],
+  "order": 62
+}

@@ -1,0 +1,9 @@
+{
+  "id": "link-cut-tree",
+  "title": "Link-Cut Tree",
+  "description": "动态树结构，支持高效路径查询与子树操作，均摊 O(log n)",
+  "category": "高级数据结构",
+  "difficulty": "advanced",
+  "tags": ["动态树", "Splay", "路径查询", "均摊复杂度"],
+  "order": 65
+}

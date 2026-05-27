@@ -1,0 +1,9 @@
+{
+  "id": "extended-gcd",
+  "title": "扩展欧几里得算法",
+  "description": "求解贝祖等式 ax+by=gcd(a,b) 的整数解，模逆元求法及密码学应用",
+  "category": "数论",
+  "difficulty": "intermediate",
+  "tags": ["数论", "模逆元", "贝祖等式", "密码学", "中国剩余定理"],
+  "order": 64
+}

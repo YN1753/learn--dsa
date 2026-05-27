@@ -1,0 +1,52 @@
+[
+  {
+    "question": "Link-Cut Tree 的 access 操作的均摊时间复杂度是多少？",
+    "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+    "answer": 1,
+    "explanation": "access 操作通过 Splay 操作将指定节点到根的路径暴露出来，均摊时间复杂度为 O(log n)。这是 Link-Cut Tree 所有核心操作的基础。"
+  },
+  {
+    "question": "Link-Cut Tree 中，makeRoot(u) 操作的含义是什么？",
+    "options": [
+      "将 u 删除",
+      "将 u 设为整棵树的根",
+      "将 u 与父节点断开",
+      "将 u 的子树翻转"
+    ],
+    "answer": 1,
+    "explanation": "makeRoot(u) 先执行 access(u)，然后对 u 执行 Splay 的 reverse 标记翻转，使得 u 成为所在树的根。这是实现 link 和 cut 操作的前提。"
+  },
+  {
+    "question": "在 LCT 中执行 link(u, v) 操作前，通常需要先做什么？",
+    "options": [
+      "对 u 执行 access",
+      "对 v 执行 cut",
+      "对 u 执行 makeRoot",
+      "对 v 执行 makeRoot"
+    ],
+    "answer": 2,
+    "explanation": "link(u, v) 表示将 u 连接到 v 下方。需要先 makeRoot(u)，这样 u 就没有父节点了，然后将 u 的 father 设为 v，完成连接。"
+  },
+  {
+    "question": "以下哪种操作是 Link-Cut Tree 难以高效支持的？",
+    "options": [
+      "路径求和",
+      "路径最大值",
+      "子树大小查询",
+      "连接两棵树"
+    ],
+    "answer": 2,
+    "explanation": "LCT 通过 preferred path（偏好路径）将实树分解为 Splay 序列，擅长路径操作（求和、最大值等）和树的连接/断开。但子树大小查询需要维护额外信息，标准 LCT 不直接支持高效的子树查询，需要使用 LCT 维护子树信息的扩展技巧。"
+  },
+  {
+    "question": "Link-Cut Tree 的 cut(u, v) 操作删除边后，整棵树会发生什么？",
+    "options": [
+      "树被合并为一棵",
+      "树被分成两棵连通分量",
+      "u 节点被删除",
+      "v 节点被删除"
+    ],
+    "answer": 1,
+    "explanation": "cut(u, v) 删除 u 和 v 之间的边，原树会被分成两棵独立的连通分量。实现时需要先 makeRoot(u)，再 access(v) 并 Splay(v)，然后断开 v 与左子树（即 u）的连接。"
+  }
+]

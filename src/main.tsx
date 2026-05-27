@@ -59,9 +59,14 @@ import './topics/strongly-connected-components/index'
 import './topics/prefix-function/index'
 import './topics/manacher/index'
 import './topics/2-sat/index'
+import './topics/bridges-and-articulation/index'
 import './topics/cartesian-tree/index'
 import './topics/heavy-light-decomposition/index'
 import './topics/dinic/index'
+import './topics/sieve-of-eratosthenes/index'
+import './topics/extended-gcd/index'
+import './topics/link-cut-tree/index'
+import './topics/euler-totient/index'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
