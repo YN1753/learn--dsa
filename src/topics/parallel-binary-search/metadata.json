@@ -1,0 +1,9 @@
+{
+  "id": "parallel-binary-search",
+  "title": "整体二分",
+  "description": "对多个查询同时二分答案，共享数据结构操作以减少总操作次数的离线算法",
+  "category": "高级算法",
+  "difficulty": "hard",
+  "tags": ["算法", "二分", "离线", "分治"],
+  "order": 122
+}

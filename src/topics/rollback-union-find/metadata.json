@@ -1,0 +1,9 @@
+{
+  "id": "rollback-union-find",
+  "title": "可撤销并查集",
+  "description": "支持撤销操作的并查集，按秩合并不压缩路径，用于线段树分治和动态图连通性",
+  "category": "高级数据结构",
+  "difficulty": "hard",
+  "tags": ["数据结构", "并查集", "可撤销", "回滚"],
+  "order": 123
+}

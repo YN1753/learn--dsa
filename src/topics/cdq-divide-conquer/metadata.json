@@ -1,0 +1,9 @@
+{
+  "id": "cdq-divide-conquer",
+  "title": "CDQ分治",
+  "description": "通过分治将多维偏序问题降维，离线算法的核心技巧",
+  "category": "高级算法",
+  "difficulty": "hard",
+  "tags": ["算法", "分治", "离线", "偏序"],
+  "order": 121
+}

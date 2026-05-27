@@ -1,0 +1,9 @@
+{
+  "id": "long-chain-decomposition",
+  "title": "长链剖分",
+  "description": "按最长链剖分树结构，通过继承指针优化树上DP和k级祖先查询",
+  "category": "高级数据结构",
+  "difficulty": "hard",
+  "tags": ["数据结构", "树", "优化", "分治"],
+  "order": 124
+}

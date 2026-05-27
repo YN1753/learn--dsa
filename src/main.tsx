@@ -122,6 +122,11 @@ import './topics/quadratic-residue/index'
 import './topics/euler-tour/index'
 import './topics/dynamic-connectivity/index'
 import './topics/offline-algorithms/index'
+import './topics/rollback-union-find/index'
+import './topics/cdq-divide-conquer/index'
+import './topics/parallel-binary-search/index'
+import './topics/long-chain-decomposition/index'
+import './topics/generalized-suffix-automaton/index'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
