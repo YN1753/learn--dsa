@@ -1,0 +1,9 @@
+{
+  "id": "line-intersection",
+  "title": "线段交",
+  "description": "利用叉积和跨立实验判定线段相交，以及扫描线算法求所有交点",
+  "category": "计算几何",
+  "difficulty": "intermediate",
+  "tags": ["计算几何", "叉积", "扫描线"],
+  "order": 87
+}

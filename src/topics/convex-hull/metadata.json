@@ -1,0 +1,9 @@
+{
+  "id": "convex-hull",
+  "title": "凸包",
+  "description": "包含给定点集的最小凸多边形，计算几何经典问题",
+  "category": "计算几何",
+  "difficulty": "intermediate",
+  "tags": ["计算几何", "凸包", "Graham Scan", "Andrew单调链", "旋转卡壳"],
+  "order": 86
+}

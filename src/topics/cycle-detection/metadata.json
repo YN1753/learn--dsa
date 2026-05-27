@@ -1,0 +1,9 @@
+{
+  "id": "cycle-detection",
+  "title": "环检测",
+  "description": "检测图和链表中是否存在环的多种算法，包括DFS三色标记、快慢指针和拓扑排序方法",
+  "category": "图论算法",
+  "difficulty": "intermediate",
+  "tags": ["图论", "环检测", "DFS", "Floyd判圈", "拓扑排序"],
+  "order": 90
+}

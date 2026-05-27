@@ -85,8 +85,13 @@ import './topics/miller-rabin/index'
 import './topics/fenwick-range/index'
 import './topics/dag-shortest-path/index'
 import './topics/closest-pair/index'
+import './topics/convex-hull/index'
 import './topics/huffman-coding/index'
 import './topics/gaussian-elimination/index'
+import './topics/tree-diameter/index'
+import './topics/line-intersection/index'
+import './topics/cycle-detection/index'
+import './topics/lca/index'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

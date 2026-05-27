@@ -1,0 +1,9 @@
+{
+  "id": "lca",
+  "title": "最近公共祖先",
+  "description": "树上两点的最近公共祖先，倍增法与Tarjan离线算法",
+  "category": "图论算法",
+  "difficulty": "intermediate",
+  "tags": ["树", "倍增", "LCA", "离线算法"],
+  "order": 89
+}
